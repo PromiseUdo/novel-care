@@ -1,8 +1,20 @@
+// app/layout.tsx
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat, Titan_One } from "next/font/google";
 import "./globals.css";
+import Topbar from "@/components/topbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-montserrat",
+});
+
+const titanOne = Titan_One({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-titan-one",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${montserrat.variable} ${titanOne.variable}`}>
+        <main className="flex flex-col min-h-screen relative text-foreground">
+          <Topbar />
+          <div className="flex-grow flex-1">{children}</div>
+        </main>
+      </body>
     </html>
   );
 }
