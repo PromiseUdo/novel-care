@@ -92,3 +92,19 @@
     @apply font-titan-one; /* Apply Titan One to headings */
   }
 }
+
+select {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+select option {
+  background: #fff;
+  color: #000;
+}

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Montserrat, Titan_One } from "next/font/google";
 import "./globals.css";
 import Topbar from "@/components/topbar";
+import Navbar from "@/components/navbar";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${montserrat.variable} ${titanOne.variable}`}>
         <main className="flex flex-col min-h-screen relative text-foreground">
           <Topbar />
+          <Navbar />
           <div className="flex-grow flex-1">{children}</div>
         </main>
       </body>
