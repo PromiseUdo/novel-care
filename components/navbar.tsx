@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinks = [
-  { url: "", label: "Home" },
-  { url: "", label: "NDIS" },
+  { url: "/", label: "Home" },
+  { url: "/ndis", label: "NDIS" },
   { url: "", label: "Referral" },
   { url: "", label: "Employment" },
   { url: "", label: "Blog" },
