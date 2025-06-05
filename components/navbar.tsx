@@ -6,7 +6,7 @@ import Link from "next/link";
 const navLinks = [
   { url: "/", label: "Home" },
   { url: "/ndis", label: "NDIS" },
-  { url: "", label: "Referral" },
+  { url: "/referral", label: "Referral" },
   { url: "", label: "Employment" },
   { url: "", label: "Blog" },
   { url: "", label: "COVID-19" },
