@@ -3,10 +3,10 @@ import MaxWidthWrapper from "./max-width-wrapper";
 
 const AboutUs = () => {
   return (
-    <div className="w-full mt-16">
+    <div id="about-us" className="w-full mt-16">
       <MaxWidthWrapper>
         <div className="flex flex-col items-center w-full gap-[40px]">
-          <h2 className="text-[40px]">About us</h2>
+          <h2 className="text-[40px] text-[#4E4D4D]">About us</h2>
 
           <div className="max-w-[29rem] relative p-4">
             <img
@@ -90,6 +90,70 @@ const AboutUs = () => {
                 to build and maintain a strong relationship with our clients and
                 their families. We, therefore, support and care for our
                 participants like family.
+              </p>
+            </div>
+          </div>
+
+          {/* <div className="flex items-center gap-[78px]">
+            <div className="relative w-full h-full self-stretch">
+              <img
+                src="/about4.png"
+                alt="Bottom background image"
+                className="absolute top-[0px] left-0 w-[300px] h-[325px]"
+              />
+            </div>
+
+            <div className="w-full flex flex-col bg-red-600 gap-[24px]">
+              <p className="leading-[28px]">
+                The range of services available at Novel Care Services includes
+                support for community participation, provision of residential
+                respite care, skill-building for improved employment
+                opportunities, provision of home care, supported independent
+                living, to mention a few. We also support our participants to
+                make the most of their NDIS funding and opportunities that life
+                presents. Our services are provided in an atmosphere of
+                acceptance and inclusivity. All of our staff are highly
+                qualified and are thoroughly vetted to ensure that we deliver
+                the best care. Our accommodations are fully equipped and well
+                furnished.
+              </p>
+              <p className="leading-[28px]">
+                We understand disability support as it is meant to be delivered.
+                Get in touch with us for more information. We are here to help
+                you and your loved ones!
+              </p>
+            </div>
+          </div> */}
+
+          <div className="flex items-center gap-[78px]  xl:mt-[-85px]">
+            {/* Fixed width for image div to preserve full shape */}
+            <div className="relative flex-none w-[300px] h-[325px]">
+              <img
+                src="/about4.png"
+                alt="Bottom background image"
+                className="absolute top-[0px] left-[28px] w-[300px] h-[325px]"
+              />
+            </div>
+
+            {/* Wider text div using flex-1 to take remaining space */}
+            <div className="flex-1 flex flex-col gap-[24px]">
+              <p className="leading-[28px]">
+                The range of services available at Novel Care Services includes
+                support for community participation, provision of residential
+                respite care, skill-building for improved employment
+                opportunities, provision of home care, supported independent
+                living, to mention a few. We also support our participants to
+                make the most of their NDIS funding and opportunities that life
+                presents. Our services are provided in an atmosphere of
+                acceptance and inclusivity. All of our staff are highly
+                qualified and are thoroughly vetted to ensure that we deliver
+                the best care. Our accommodations are fully equipped and well
+                furnished.
+              </p>
+              <p className="leading-[28px]">
+                We understand disability support as it is meant to be delivered.
+                Get in touch with us for more information. We are here to help
+                you and your loved ones!
               </p>
             </div>
           </div>

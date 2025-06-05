@@ -80,6 +80,10 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-montserrat; /* Apply Montserrat as default */
   }
@@ -107,4 +111,27 @@ select:focus {
 select option {
   background: #fff;
   color: #000;
+}
+
+@keyframes slideDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+@keyframes slideUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+[data-state="open"] [data-radix-accordion-content] {
+  animation: slideDown 300ms ease-out;
+}
+[data-state="closed"] [data-radix-accordion-content] {
+  animation: slideUp 300ms ease-out;
 }

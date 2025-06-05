@@ -1,6 +1,15 @@
 import React from "react";
 import { Button } from "./ui/button";
 
+const services = [
+  {
+    icon: "/profile-user.png",
+    title: "Community and Social Participation",
+    description:
+      "Social participation improves general health and wellbeing. At Novel Care Services we do our best to assist our clients to be part of the community they choose. We assist our clients to develop and maintain the communication skills and social interaction skills required to function effectively. This service is provided in a non-judgemental and friendly atmosphere. We specialise in assisting clients to participate in social activities such as sports, swimming, yoga, pilates, dancing, and movies. Social skills such as shopping for groceries at bargain prices and money management are also taught by our experienced staff.",
+  },
+];
+
 const Hero = () => {
   return (
     <div className="relative h-[810px] w-full overflow-hidden">

@@ -3,10 +3,10 @@ import MaxWidthWrapper from "./max-width-wrapper";
 
 const OurValues = () => {
   return (
-    <div className="w-full">
+    <div id="our-values" className="w-full">
       <MaxWidthWrapper>
         <div className="flex flex-col items-center w-full gap-[40px]">
-          <h2 className="text-[40px]">Our Values</h2>
+          <h2 className="text-[40px] text-[#4E4D4D]">Our Values</h2>
 
           <div className="flex items-start gap-[52px]">
             <div className="w-full">

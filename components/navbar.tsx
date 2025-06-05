@@ -14,7 +14,7 @@ const navLinks = [
 ];
 const Navbar = () => {
   return (
-    <div className="shadow w-full h-[96px] bg-white py-[16px] sticky top-0  z-40 ">
+    <div className="shadow w-full h-[96px] bg-white py-[16px] sticky top-0  z-50 ">
       <MaxWidthWrapper>
         <div className="w-full flex items-center justify-between">
           <div className="relative w-[164.5px] h-[64px]">
