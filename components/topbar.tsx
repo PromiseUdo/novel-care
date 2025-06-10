@@ -10,8 +10,8 @@ const Topbar = () => {
         <div className="w-full flex items-center justify-end">
           <div className="flex items-center gap-[16px]">
             <Link
-              href="/contact-us"
-              className="font-montserrat font-medium text-base hover:text-primary"
+              href="/contact"
+              className="font-montserrat font-medium text-base hover:text-[#1e1e1e]"
             >
               Contact Us
             </Link>
