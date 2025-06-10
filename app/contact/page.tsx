@@ -1,12 +1,14 @@
 import React from "react";
 import Hero from "./components/hero";
-import ReferralForm from "./components/referral-form";
+import Map from "./components/map";
+import ContactForm from "./components/contact-form";
 
 const page = () => {
   return (
     <div>
       <Hero />
-      <ReferralForm />
+      <ContactForm />
+      <Map />
     </div>
   );
 };

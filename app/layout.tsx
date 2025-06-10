@@ -5,6 +5,7 @@ import "./globals.css";
 import Topbar from "@/components/topbar";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { Toaster } from "sonner";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -35,6 +36,8 @@ export default function RootLayout({
           <Topbar />
           <Navbar />
           <div className="flex-grow flex-1">{children}</div>
+          <Toaster />
+
           <Footer />
         </main>
       </body>

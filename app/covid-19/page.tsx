@@ -1,12 +1,12 @@
 import React from "react";
 import Hero from "./components/hero";
-import ReferralForm from "./components/referral-form";
+import Main from "./components/main";
 
 const page = () => {
   return (
     <div>
       <Hero />
-      <ReferralForm />
+      <Main />
     </div>
   );
 };

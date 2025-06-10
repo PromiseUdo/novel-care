@@ -26,7 +26,7 @@ const WhatIs = () => {
                 NDIS. The funding for supporting you is provided to you directly
                 by the NDIS. This includes funding for the services that we
                 provide you at Novel Care Services. For more information about
-                the NDIS, please contact us or visit:
+                the NDIS, please contact us or visit:  {" "}
                 <a
                   className="text-[#E67817]"
                   href=" https://www.ndis.gov.au/understanding/how-ndis-works"
