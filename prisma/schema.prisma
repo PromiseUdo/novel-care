@@ -1,0 +1,20 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Comment {
+  id        String    @id @default(auto()) @map("_id") @db.ObjectId
+  postId    String    @map("post_id") // Contentful post sys.id
+  author    String    @map("author") // Commenter's name
+  email     String?   @map("email") // Optional email
+  comment   String    @map("comment")
+  timestamp DateTime  @default(now()) @map("timestamp")
+  status    String    @default("pending") @map("status") // pending, approved
+
+  @@index([postId]) // Optimize queries by postId
+}
