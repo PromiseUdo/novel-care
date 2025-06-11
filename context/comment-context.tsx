@@ -26,7 +26,7 @@ export const CommentProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   const [comments, setComments] = useState<CommentType[]>([]);
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   const fetchComments = useCallback(async (postId: string) => {
     try {

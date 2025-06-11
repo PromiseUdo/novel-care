@@ -27,7 +27,7 @@ const page = async ({ params }: { params: IParams }) => {
   if (!blogPost) {
     return <div>Post not found</div>; // Handle missing post
   }
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   // Fetch comment count from MongoDB
   let commentCount = 0;

@@ -29,7 +29,7 @@ async function getData(searchQuery: string = "") {
     (a, b) => Date.parse(b.sys.createdAt) - Date.parse(a.sys.createdAt)
   );
 
-  const baseUrl = "http://localhost:3000";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
   // Fetch comment counts from MongoDB
   const postIds = blogPosts.items.map((post: any) => post.sys.id); // Use Contentful sys.id as postId
