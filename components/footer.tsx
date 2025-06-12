@@ -37,9 +37,9 @@ const socialIcons = [
 
 const Footer = () => {
   return (
-    <div className="h-[424px] w-full bg-[#FAE4D180] mt-16">
-      <MaxWidthWrapper className="h-full">
-        <div className=" w-full h-full grid grid-cols-3 items-center">
+    <div className="h-full md:h-[424px] w-full bg-[#FAE4D180] mt-16">
+      <MaxWidthWrapper className="h-full py-[50px] md:py-0">
+        <div className=" w-full h-full grid grid-cols-1 md:grid-cols-3 items-start md:items-center md:gap-0 gap-[105px]">
           <div className="flex flex-col gap-[15px] ">
             <div className="relative w-[164.5px] h-[64px]">
               <Image src={"/logo.png"} alt="logo" fill className="" />
@@ -107,9 +107,9 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-start md:justify-center">
             <div
-              className="h-[100px] w-[150px] bg-cover bg-center"
+              className="w-[189px] h-[100px] md:w-[150px] bg-cover bg-center"
               style={{
                 backgroundImage: `url("/ndis.png")`, // Corrected syntax with quotes
               }}
@@ -120,7 +120,7 @@ const Footer = () => {
           <div className="flex flex-col gap-2">
             <div className="flex items-center gap-[15px]">
               <div
-                className="h-[100px] w-[150px] bg-cover bg-center"
+                className="h-[72px] w-[107.22px] md:h-[100px] md:w-[150px] bg-cover bg-center"
                 style={{
                   backgroundImage: `url("/flag1.png")`, // Corrected syntax with quotes
                 }}
@@ -128,7 +128,7 @@ const Footer = () => {
                 aria-label="Aboriginal and Torres Strait Islander flag"
               />
               <div
-                className="h-[100px] w-[150px] bg-cover bg-center"
+                className="h-[72px] w-[107.22px] md:h-[100px] md:w-[150px] bg-cover bg-center"
                 style={{
                   backgroundImage: `url("/flag2.png")`, // Corrected syntax with quotes
                 }}
@@ -136,7 +136,7 @@ const Footer = () => {
                 aria-label="Aboriginal and Torres Strait Islander flag"
               />
               <div
-                className="h-[100px] w-[150px] bg-cover bg-center"
+                className="h-[72px] w-[107.22px] md:h-[100px] md:w-[150px] bg-cover bg-center"
                 style={{
                   backgroundImage: `url("/flag3.png")`, // Corrected syntax with quotes
                 }}
