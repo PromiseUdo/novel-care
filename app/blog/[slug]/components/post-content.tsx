@@ -65,7 +65,7 @@ const richTextOptions = {
 
 const PostContent: React.FC<BlogPostClientProps> = ({ items }) => {
   return (
-    <div className="mx-auto w-full max-w-5xl  mt-16">
+    <div className="mx-auto w-full max-w-5xl mt-8 md:mt-16">
       <div className="h-full w-full pb-8">
         {documentToReactComponents(items[0]?.fields?.postBody, richTextOptions)}
       </div>

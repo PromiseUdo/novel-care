@@ -53,7 +53,7 @@ const page = async ({ params }: { params: IParams }) => {
     : "/default-image.jpg"; // Fallback image
 
   return (
-    <div className="w-full mt-16">
+    <div className="w-full mt-8 md:mt-16">
       <MaxWidthWrapper>
         <Header
           title={String(blogPost?.fields?.title ?? "")}

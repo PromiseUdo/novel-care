@@ -42,7 +42,7 @@ const Header = ({
             quality={85}
           />
         </div>
-        <div className="mx-auto mt-2 flex justify-center items-center gap-[5px]">
+        <div className="mx-auto mt-2 flex flex-col md:flex-row justify-center items-center gap-[8px] md:gap-[5px]">
           <p className="text-[#E67817] font-medium">
             {format(post?.sys?.createdAt, "d MMM yyyy")}
           </p>
