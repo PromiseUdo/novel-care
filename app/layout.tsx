@@ -22,6 +22,9 @@ const titanOne = Titan_One({
 export const metadata: Metadata = {
   title: "Novel Care Services",
   description: "High quality care support service",
+   icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+        <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+      </head>
       <body className={`${montserrat.variable} ${titanOne.variable}`}>
         <main className="flex flex-col min-h-screen relative text-foreground">
           <Topbar />
