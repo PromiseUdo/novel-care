@@ -30,9 +30,9 @@ const Navbar = () => {
     <div className="shadow w-full h-[96px] bg-white py-[16px] sticky top-0 z-50">
       <MaxWidthWrapper>
         <div className="w-full flex items-center justify-between">
-          <div className="relative w-[164.5px] h-[64px]">
-            <Image src={"/logo.png"} alt="logo" fill className="" />
-          </div>
+          <Link href="/" className="relative w-[164.5px] h-[64px]">
+            <Image src="/logo.png" alt="logo" fill className="" />
+          </Link>
 
           <div className="ml-auto flex items-center">
             <div className="hidden md:flex items-center gap-[25px]">
