@@ -6,12 +6,12 @@ const socialIcons = [
   {
     src: "/facebook.png",
     alt: "Facebook",
-    href: "https://www.facebook.com/your-page",
+    href: "https://www.facebook.com/novelcareservices/",
   },
   {
     src: "/x.png",
     alt: "Twitter",
-    href: "https://www.twitter.com/your-page",
+    href: "https://twitter.com/novel_care",
   },
   {
     src: "/instagram.png",
@@ -21,17 +21,17 @@ const socialIcons = [
   {
     src: "/linkedin.png",
     alt: "LinkedIn",
-    href: "https://www.linkedin.com/your-page",
+    href: "https://www.linkedin.com",
   },
   {
     src: "/youtube.png",
     alt: "Youtube",
-    href: "https://www.linkedin.com/your-page",
+    href: "https://www.youtube.com/channel/UCrSle1zQebem0XO-G_emGEQ/featured?view_as=subscriber",
   },
   {
     src: "/pinterest.png",
     alt: "Pinterest",
-    href: "https://www.linkedin.com/your-page",
+    href: "https://in.pinterest.com/novelcareservices/_saved/",
   },
 ];
 
