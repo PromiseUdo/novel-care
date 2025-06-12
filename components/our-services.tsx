@@ -113,8 +113,8 @@ const OurServices = () => {
         <div className="flex flex-col items-center justify-center w-full gap-[40px]">
           <h2 className="text-[40px] text-[#4E4D4D]">Services</h2>
 
-          <div className="max-w-2xl relative p-4">
-            <p className="text-center">
+          <div className="w-full md:max-w-2xl relative ">
+            <p className="text-justify md:text-center">
               The needs of people with disability is as varied as their unique
               personalities. We will always work with you to ensure that your
               needs are met the way you want it. Let us know what your goals
