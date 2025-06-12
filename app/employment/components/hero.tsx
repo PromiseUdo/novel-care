@@ -38,6 +38,7 @@ const Hero = () => {
 
       <svg
         className="absolute inset-0 z-20 hidden md:block md:w-[52%]"
+        height="100%"
         viewBox="0 0 960 400"
         preserveAspectRatio="none"
       >
