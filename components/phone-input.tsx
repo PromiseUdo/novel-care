@@ -25,7 +25,7 @@ const PhoneInputComponent: React.FC<PhoneInputProps> = ({
   label,
 }) => {
   return (
-    <FormItem>
+    <FormItem className="col-span-2 md:col-span-1">
       <FormLabel>{label}</FormLabel>
       <FormControl>
         <PhoneInput

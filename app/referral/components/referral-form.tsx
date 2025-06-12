@@ -112,7 +112,7 @@ const ReferralForm = () => {
   return (
     <div className="w-full mt-16">
       <MaxWidthWrapper>
-        <div className="w-full md:max-w-5xl border border-[#D4D0E280] shadow rounded-[40px] p-[40px] flex flex-col gap-[24px]">
+        <div className=" w-full md:max-w-5xl border border-[#D4D0E280] shadow rounded-[40px] px-[16px] py-[40px] md:px-[40px] md:p-[40px] flex flex-col gap-[24px]">
           <div className="flex items-start justify-between">
             <div className="flex flex-col gap-2">
               <p className="font-medium text-[#1E1E1E]">Email</p>
@@ -188,7 +188,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="referrer_firstName"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           First Name
                         </FormLabel>
@@ -203,7 +203,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="referrer_lastName"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Last Name
                         </FormLabel>
@@ -247,7 +247,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="referrer_email"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Email
                         </FormLabel>
@@ -262,7 +262,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="referrer_consent"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           I have consent from the client to make this referral
                         </FormLabel>
@@ -300,7 +300,8 @@ const ReferralForm = () => {
                     render={({ field }) => (
                       <FormItem className="col-span-2">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
-                          Relationship with the Client
+                          My relationship with the person needing disability
+                          support{" "}
                         </FormLabel>
                         <FormControl>
                           <Input placeholder="Relationship" {...field} />
@@ -322,7 +323,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_firstName"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           First Name
                         </FormLabel>
@@ -337,7 +338,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_lastName"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Last Name
                         </FormLabel>
@@ -352,7 +353,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_preferredName"
                     render={({ field }) => (
-                      <FormItem className="col-span-2">
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Preferred Name
                         </FormLabel>
@@ -453,7 +454,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_address_houseNumberAndStreet"
                     render={({ field }) => (
-                      <FormItem className="col-span-2">
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           House Number and Street
                         </FormLabel>
@@ -471,7 +472,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_address_suburb"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Suburb
                         </FormLabel>
@@ -486,7 +487,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_address_postcode"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Postcode
                         </FormLabel>
@@ -501,7 +502,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_canBePhoned"
                     render={({ field }) => (
-                      <FormItem className="col-span-2">
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Can the client be phoned?
                         </FormLabel>
@@ -550,7 +551,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_riskAssessment"
                     render={({ field }) => (
-                      <FormItem className="col-span-2">
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Risk Assessment
                         </FormLabel>
@@ -876,7 +877,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_planStartDate"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Plan start date (please attach NDIS plan)
                         </FormLabel>
@@ -942,7 +943,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_planEndDate"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Plan End Date
                         </FormLabel>
