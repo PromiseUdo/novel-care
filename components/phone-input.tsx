@@ -1,4 +1,3 @@
-// components/PhoneInput.tsx
 import React from "react";
 import { Input } from "@/components/ui/input";
 import {
@@ -8,7 +7,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import PhoneInput from "react-phone-number-input";
-import "react-phone-number-input/style.css"; // Ensure default styles are imported
+import "react-phone-number-input/style.css";
 import { parsePhoneNumberFromString } from "libphonenumber-js";
 
 interface PhoneInputProps {
@@ -29,10 +28,10 @@ const PhoneInputComponent: React.FC<PhoneInputProps> = ({
       <FormLabel>{label}</FormLabel>
       <FormControl>
         <PhoneInput
-          international // Enables country code dropdown
-          defaultCountry="AU" // Default to Australia
-          withCountryCallingCode // Ensures country code is included
-          countryCallingCodeEditable={false} // Prevents editing the country code
+          international
+          defaultCountry="AU"
+          withCountryCallingCode
+          countryCallingCodeEditable={false}
           value={value}
           onChange={(val) => onChange(val || "")}
           placeholder="Enter phone number"

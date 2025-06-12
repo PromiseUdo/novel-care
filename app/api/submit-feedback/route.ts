@@ -3,15 +3,12 @@ import { z } from "zod";
 import { FeedbackSchema, FeedbackSchemaType } from "@/types/feedback-schema";
 import { sendFeedbackEmailData } from "@/server/actions/email";
 
-// POST endpoint for feedback submissions
 export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    // Validate feedback data
     const validatedData = FeedbackSchema.parse(body);
 
-    // Send feedback email
     const result = await sendFeedbackEmailData(validatedData);
 
     if (result.error) {

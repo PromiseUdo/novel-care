@@ -29,7 +29,6 @@ import PhoneInputComponent from "@/components/phone-input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
 
-// Explicitly define defaultValues to match flattened ReferralSchemaType
 const defaultValues: ReferralSchemaType = {
   id: undefined,
   apply_date: new Date(),
@@ -95,7 +94,7 @@ const ReferralForm = () => {
 
       if (response.ok) {
         toast.success("Referral submitted successfully!");
-        form.reset(); // Reset form after successful submission
+        form.reset();
         setPreferredLanguages([]);
         setSupportServices([]);
       } else {
@@ -164,10 +163,10 @@ const ReferralForm = () => {
                             mode="single"
                             selected={
                               field.value ? new Date(field.value) : undefined
-                            } // Ensure it's a Date object
+                            }
                             onSelect={(date) =>
                               field.onChange(date ? new Date(date) : null)
-                            } // Convert to Date before updating
+                            }
                           />
                         </PopoverContent>
                       </Popover>
@@ -401,36 +400,14 @@ const ReferralForm = () => {
                               mode="single"
                               selected={
                                 field.value ? new Date(field.value) : undefined
-                              } // Ensure it's a Date object
+                              }
                               onSelect={(date) =>
                                 field.onChange(date ? new Date(date) : null)
-                              } // Convert to Date before updating
-                              // disabled={(date) =>
-                              //   date > new Date() || date < new Date("1900-01-01")
-                              // }
+                              }
                             />
                           </PopoverContent>
                         </Popover>
 
-                        {/* <FormControl>
-                          <Input
-                            type="date"
-                            className="flex items-center justify-between"
-                            {...field}
-                            value={
-                              field.value
-                                ? field.value.toISOString().split("T")[0]
-                                : ""
-                            }
-                            onChange={(e) =>
-                              field.onChange(
-                                e.target.value
-                                  ? new Date(e.target.value)
-                                  : new Date()
-                              )
-                            }
-                          />
-                        </FormControl> */}
                         <FormMessage />
                       </FormItem>
                     )}
@@ -906,35 +883,14 @@ const ReferralForm = () => {
                               mode="single"
                               selected={
                                 field.value ? new Date(field.value) : undefined
-                              } // Ensure it's a Date object
+                              }
                               onSelect={(date) =>
                                 field.onChange(date ? new Date(date) : null)
-                              } // Convert to Date before updating
-                              // disabled={(date) =>
-                              //   date > new Date() || date < new Date("1900-01-01")
-                              // }
+                              }
                             />
                           </PopoverContent>
                         </Popover>
 
-                        {/* <FormControl>
-                          <Input
-                            type="date"
-                            {...field}
-                            value={
-                              field.value
-                                ? field.value.toISOString().split("T")[0]
-                                : ""
-                            }
-                            onChange={(e) =>
-                              field.onChange(
-                                e.target.value
-                                  ? new Date(e.target.value)
-                                  : undefined
-                              )
-                            }
-                          />
-                        </FormControl> */}
                         <FormMessage />
                       </FormItem>
                     )}
@@ -972,34 +928,14 @@ const ReferralForm = () => {
                               mode="single"
                               selected={
                                 field.value ? new Date(field.value) : undefined
-                              } // Ensure it's a Date object
+                              }
                               onSelect={(date) =>
                                 field.onChange(date ? new Date(date) : null)
-                              } // Convert to Date before updating
-                              // disabled={(date) =>
-                              //   date > new Date() || date < new Date("1900-01-01")
-                              // }
+                              }
                             />
                           </PopoverContent>
                         </Popover>
-                        {/* <FormControl>
-                          <Input
-                            type="date"
-                            {...field}
-                            value={
-                              field.value
-                                ? field.value.toISOString().split("T")[0]
-                                : ""
-                            }
-                            onChange={(e) =>
-                              field.onChange(
-                                e.target.value
-                                  ? new Date(e.target.value)
-                                  : undefined
-                              )
-                            }
-                          />
-                        </FormControl> */}
+
                         <FormMessage />
                       </FormItem>
                     )}
@@ -1162,12 +1098,6 @@ const ReferralForm = () => {
                           for supports)
                         </FormLabel>
                         <FormControl>
-                          {/* <Input
-                            placeholder="Other Comments"
-                            {...field}
-                            value={field.value ?? ""}
-                          /> */}
-
                           <Textarea
                             placeholder="Other comments"
                             className="resize-none"

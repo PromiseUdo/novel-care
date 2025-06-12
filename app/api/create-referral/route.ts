@@ -7,7 +7,6 @@ export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
 
-    // Transform date strings to Date objects
     const transformedBody = {
       ...body,
       apply_date: body.apply_date ? new Date(body.apply_date) : undefined,
@@ -22,7 +21,7 @@ export async function POST(req: NextRequest) {
         : undefined,
     };
 
-    const validatedData = ReferralSchema.parse(transformedBody); // Validate data
+    const validatedData = ReferralSchema.parse(transformedBody);
     const result = await sendReferralFormDataEmail(validatedData);
 
     if (result.error) {

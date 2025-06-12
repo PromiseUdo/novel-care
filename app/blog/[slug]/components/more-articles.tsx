@@ -13,7 +13,6 @@ const PostsRenderer = ({
   blogPosts: any;
   postId: string;
 }) => {
-  // Filter featured posts (server-side filtering already applied)
   const morePosts = blogPosts.items
     .filter((post: any) => post?.sys?.id !== postId)
     .slice(0, 3);
@@ -29,17 +28,6 @@ const PostsRenderer = ({
           "It looks like there are no featured posts to display right now. Check back later for new content!"
         }
       />
-      {/* <PostsReel
-        title="Recent Posts"
-        posts={blogPosts.items}
-        className="bg-gray-50"
-        emptyTitle="No Recent Posts Found"
-        emptyDescription={
-          searchQuery
-            ? `No recent posts match your search for "${searchQuery}". Try a different term!`
-            : "It looks like there are no recent posts to display right now. Check back later for new content!"
-        }
-      /> */}
     </div>
   );
 };
@@ -54,14 +42,12 @@ async function getData(searchQuery: string = "") {
     content_type: "blogPost",
   };
 
-  // Add search filter if query exists
   if (searchQuery.trim()) {
     query["query"] = searchQuery.trim();
   }
 
   const blogPosts = await client.getEntries(query);
 
-  // Sort all posts by createdAt (newest first)
   blogPosts.items.sort(
     (a, b) => Date.parse(b.sys.createdAt) - Date.parse(a.sys.createdAt)
   );
@@ -71,10 +57,6 @@ async function getData(searchQuery: string = "") {
 
 const MoreArticles = async ({ postId }: { postId: string }) => {
   const [blogPosts] = await getData();
-
-  // const morePost = blogPosts.items
-  // .filter((post: any) => post.fields.featuredPost === true)
-  // .slice(0, 3);
 
   return (
     <div className="w-full  mt-16">

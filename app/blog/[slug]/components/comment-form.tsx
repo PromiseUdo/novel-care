@@ -35,8 +35,8 @@ export default function CommentForm({ postId }: { postId: string }) {
 
   const onSubmit = async (data: CommentSchemaType) => {
     setIsSubmitting(true);
-    const tempId = `temp-${Date.now()}`; // Temporary ID
-    const clientTimestamp = new Date().toISOString(); // Client-side timestamp
+    const tempId = `temp-${Date.now()}`;
+    const clientTimestamp = new Date().toISOString();
     const tempComment = {
       id: tempId,
       author: data.name,
@@ -44,7 +44,6 @@ export default function CommentForm({ postId }: { postId: string }) {
       timestamp: clientTimestamp,
     };
 
-    // Optimistically add comment
     dispatchComment({ type: "ADD", comment: tempComment });
     // toast.info("Submitting your comment...");
 
@@ -57,22 +56,20 @@ export default function CommentForm({ postId }: { postId: string }) {
           email: data.email,
           comment: data.comment,
           postId,
-          timestamp: clientTimestamp, // Send client-side timestamp
+          timestamp: clientTimestamp,
         }),
       });
 
       if (response.ok) {
         const { comment } = await response.json();
-        // Log for debugging
         console.log("API response comment:", comment);
-        // Update temp comment with server comment
         dispatchComment({
           type: "UPDATE",
           comment: {
-            id: tempId, // Replace the temp comment
+            id: tempId,
             author: comment.author,
             comment: comment.comment,
-            timestamp: comment.timestamp, // Use server timestamp
+            timestamp: comment.timestamp,
           },
         });
         // toast.success("Comment submitted successfully!");

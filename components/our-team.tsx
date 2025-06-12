@@ -8,7 +8,6 @@ const OurTeam = () => {
         <div className="flex flex-col items-center w-full gap-[40px]">
           <h2 className="text-[40px] text-[#4E4D4D]">Our Team</h2>
 
-          {/* Added min-h-[400px] to ensure flex container has enough height for items-center */}
           <div className="flex flex-col-reverse md:flex-row items-center justify-between min-h-[400px] pb-[40px] gap-[40px] md:gap-[108px] ">
             <div className="w-full flex flex-col gap-[48px]">
               <p className="leading-[28px]">
@@ -31,7 +30,6 @@ const OurTeam = () => {
               </p>
             </div>
 
-            {/* Added h-full to ensure image column matches flex container height */}
             <div className="relative w-full h-[280px] md:h-full self-stretch">
               <img
                 src="/our-team1.png"

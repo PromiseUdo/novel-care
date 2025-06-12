@@ -5,10 +5,10 @@ import Link from "next/link";
 
 const HomePageNav = () => {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-    e.preventDefault(); // Prevent default anchor behavior
+    e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
-      const navHeight = 108 + 96; // Sticky nav height (108px) + top offset (96px)
+      const navHeight = 108 + 96;
       const elementPosition =
         element.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({

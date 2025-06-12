@@ -130,7 +130,7 @@ const Footer = () => {
               <div
                 className="h-[72px] w-[107.22px] md:h-[100px] md:w-[150px] bg-cover bg-center"
                 style={{
-                  backgroundImage: `url("/flag2.png")`, // Corrected syntax with quotes
+                  backgroundImage: `url("/flag2.png")`,
                 }}
                 role="img"
                 aria-label="Aboriginal and Torres Strait Islander flag"
@@ -138,7 +138,7 @@ const Footer = () => {
               <div
                 className="h-[72px] w-[107.22px] md:h-[100px] md:w-[150px] bg-cover bg-center"
                 style={{
-                  backgroundImage: `url("/flag3.png")`, // Corrected syntax with quotes
+                  backgroundImage: `url("/flag3.png")`,
                 }}
                 role="img"
                 aria-label="Aboriginal and Torres Strait Islander flag"

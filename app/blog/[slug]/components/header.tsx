@@ -10,20 +10,18 @@ const Header = ({
   date,
   featuredImage,
   post,
-  commentCount, // Added prop
+  commentCount,
 }: {
   title: string;
   date: string;
   featuredImage: string;
   post: any;
-  commentCount: number; // Added prop
+  commentCount: number;
 }) => {
   const postBodyText = extractTextFromPostBody(post?.fields?.postBody);
 
-  // Debug logs
-  console.log("featuredImage:", featuredImage);
-  // console.log("imageUrl:", imageUrl);
-  console.log("post:", post);
+  // console.log("featuredImage:", featuredImage);
+  // console.log("post:", post);
 
   return (
     <div className="w-full flex flex-col gap-[32px]">

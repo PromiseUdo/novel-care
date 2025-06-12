@@ -24,26 +24,22 @@ const FeedbackSuccessModal: React.FC<FeedbackSuccessModalProps> = ({
           width: "429px",
           height: "357px",
         }}
-        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
+        onClick={(e) => e.stopPropagation()}
       >
-        {/* Tick Icon */}
         <Image
-          src="/check-circle.png" // Replace with actual tick PNG URL
+          src="/check-circle.png"
           alt="Success Tick"
           width={40}
           height={40}
           className="mb-[12px]"
         />
 
-        {/* Feedback Text */}
         <p className="text-[24px] font-semibold text-[#1E1E1E]">Feedback</p>
 
-        {/* Success Message */}
         <p className="text-[18px] text-[#4E4D4D] text-center">
           Feedback submitted successfully
         </p>
 
-        {/* Done Button */}
         <Button
           onClick={onClose}
           className="w-[300px] font-semibold h-[52px] text-black bg-[#E67817] rounded-[64px] mt-[24px]"

@@ -19,7 +19,7 @@ const CommentsList: React.FC<CommentsListProps> = ({ postId }) => {
   const { comments, fetchComments } = useCommentContext();
 
   useEffect(() => {
-    fetchComments(postId); // Fetch comments when component mounts or postId changes
+    fetchComments(postId);
   }, [postId, fetchComments]);
 
   return (

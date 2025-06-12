@@ -8,11 +8,9 @@ interface CommentProps {
 }
 
 const Comment: React.FC<CommentProps> = ({ author, comment, timestamp }) => {
-  // Validate timestamp
   const date = new Date(timestamp);
   const isValidDate = !isNaN(date.getTime());
 
-  // Format date or show fallback
   const formattedDate = isValidDate
     ? date.toLocaleDateString("en-AU", {
         day: "numeric",
@@ -20,11 +18,10 @@ const Comment: React.FC<CommentProps> = ({ author, comment, timestamp }) => {
         year: "numeric",
         timeZone: "Africa/Lagos",
       })
-    : "Date unavailable"; // Fallback for invalid date
+    : "Date unavailable";
 
-  // Log invalid timestamp for debugging
   if (!isValidDate) {
-    console.warn(`Invalid timestamp received: ${timestamp}`); // Debug invalid timestamp
+    console.warn(`Invalid timestamp received: ${timestamp}`);
   }
 
   return (

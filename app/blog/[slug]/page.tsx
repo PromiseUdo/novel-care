@@ -25,22 +25,21 @@ const page = async ({ params }: { params: IParams }) => {
   const blogPost = items[0] as any;
 
   if (!blogPost) {
-    return <div>Post not found</div>; // Handle missing post
+    return <div>Post not found</div>;
   }
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-  // Fetch comment count from MongoDB
   let commentCount = 0;
   try {
     const response = await fetch(`${baseUrl}/api/comments//count`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ postIds: [blogPost.sys.id] }), // Send single postId
-      cache: "no-store", // Ensure fresh data
+      body: JSON.stringify({ postIds: [blogPost.sys.id] }),
+      cache: "no-store",
     });
     if (response.ok) {
       const counts = await response.json();
-      commentCount = counts[blogPost.sys.id] || 0; // Extract count for postId
+      commentCount = counts[blogPost.sys.id] || 0;
     } else {
       console.error("Failed to fetch comment count:", await response.json());
     }
@@ -50,17 +49,17 @@ const page = async ({ params }: { params: IParams }) => {
 
   const imageUrl = blogPost?.fields?.featuredImage?.fields?.file?.url
     ? `https:${blogPost.fields.featuredImage.fields.file.url}`
-    : "/default-image.jpg"; // Fallback image
+    : "/default-image.jpg";
 
   return (
     <div className="w-full mt-8 md:mt-16">
       <MaxWidthWrapper>
         <Header
           title={String(blogPost?.fields?.title ?? "")}
-          date={format(blogPost?.sys?.createdAt, "d MMM yyyy")} // Fixed typo: "yyy" to "yyyy"
+          date={format(blogPost?.sys?.createdAt, "d MMM yyyy")}
           featuredImage={imageUrl}
           post={blogPost}
-          commentCount={commentCount} // Pass comment count
+          commentCount={commentCount}
         />
         <PostContent items={items} />
         <CommentsAndShare postId={blogPost?.sys?.id} />

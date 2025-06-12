@@ -42,7 +42,6 @@ const Topbar = () => {
                 </svg>
               </button>
             </div>{" "}
-            {/* ← this div was missing its closing tag */}
           </div>
         </div>
       </MaxWidthWrapper>

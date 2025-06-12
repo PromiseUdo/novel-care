@@ -1,4 +1,3 @@
-// server/actions/email.ts
 "use server";
 
 import { ContactFormEmailTemplate } from "@/components/emails/contact-form-email";
@@ -17,12 +16,11 @@ export const sendReferralFormDataEmail = async (
   formData: ReferralSchemaType
 ) => {
   try {
-    // Validate the incoming data
     const validatedData = ReferralSchema.parse(formData);
 
     const { data, error } = await resend.emails.send({
       from: "Greenage Technologies <no-reply@powerring.ng>",
-      to: "info.promiseudo@gmail.com", // Admin email
+      to: "info.promiseudo@gmail.com",
       subject: `New Referral Submission from ${validatedData.referrer_firstName} ${validatedData.referrer_lastName}`,
       react: ReferralFormEmailTemplate({ formData: validatedData }),
     });
@@ -44,12 +42,11 @@ export const sendReferralFormDataEmail = async (
 
 export const sendFeedbackEmailData = async (formData: FeedbackSchemaType) => {
   try {
-    // Validate the incoming data
     const validatedData = FeedbackSchema.parse(formData);
 
     const { data, error } = await resend.emails.send({
       from: "Greenage Technologies <no-reply@powerring.ng>",
-      to: "info.promiseudo@gmail.com", // Admin email
+      to: "info.promiseudo@gmail.com",
       subject: `New Feedback/Complaint Submission from ${validatedData.firstName} ${validatedData.lastName}`,
       react: FeedbackFormEmailTemplate({ formData: validatedData }),
     });
@@ -71,7 +68,6 @@ export const sendFeedbackEmailData = async (formData: FeedbackSchemaType) => {
 
 export const sendContactFormDataEmail = async (formData: ContactSchemaType) => {
   try {
-    // Validate the incoming data
     const validatedData = ContactSchema.parse(formData);
 
     const { data, error } = await resend.emails.send({

@@ -3,15 +3,12 @@ import { z } from "zod";
 import { ContactSchema, ContactSchemaType } from "@/types/contact-schema";
 import { sendContactFormDataEmail } from "@/server/actions/email";
 
-// POST endpoint for contact form submissions
 export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    // Validate contact data
     const validatedData = ContactSchema.parse(body);
 
-    // Send contact email
     const result = await sendContactFormDataEmail(validatedData);
 
     if (result.error) {

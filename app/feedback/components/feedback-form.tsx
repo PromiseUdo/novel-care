@@ -78,7 +78,7 @@ const FeedbackForm = () => {
 
       if (response.ok) {
         toast.success("Feedback submitted successfully!");
-        setIsModalOpen(true); // Show modal on success
+        setIsModalOpen(true);
       } else {
         toast.error("Failed to submit feedback");
       }
@@ -92,7 +92,7 @@ const FeedbackForm = () => {
 
   const handleModalClose = () => {
     setIsModalOpen(false);
-    form.reset(); // Reset form when modal closes
+    form.reset();
   };
 
   return (

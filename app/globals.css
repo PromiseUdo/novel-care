@@ -85,7 +85,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-montserrat; /* Apply Montserrat as default */
+    @apply bg-background text-foreground font-montserrat;
   }
   h1,
   h2,
@@ -93,7 +93,7 @@
   h4,
   h5,
   h6 {
-    @apply font-titan-one; /* Apply Titan One to headings */
+    @apply font-titan-one;
   }
 }
 

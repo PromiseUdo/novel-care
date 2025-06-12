@@ -21,7 +21,7 @@ const navLinks = [
 
 const Navbar = () => {
   const router = useRouter();
-  const pathname = usePathname(); // Get the current pathname
+  const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false);
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -37,10 +37,7 @@ const Navbar = () => {
           <div className="ml-auto flex items-center">
             <div className="hidden md:flex items-center gap-[25px]">
               {navLinks.map((link) => {
-                // Determine if the link is active
-                const isActive = link.url
-                  ? pathname === link.url // Exact match for non-empty URLs
-                  : false; // Links with empty URLs are never active
+                const isActive = link.url ? pathname === link.url : false;
 
                 return (
                   <Link
@@ -146,8 +143,6 @@ const Navbar = () => {
                   >
                     Feedback
                   </Link>
-
-                  {/* place a close icon here from lucide react use SetisOpento close - false it */}
 
                   <button
                     onClick={() => setIsOpen(false)}

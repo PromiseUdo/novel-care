@@ -179,7 +179,7 @@ const OurServices = () => {
 
             {/* Group 2 */}
             <Accordion.Root
-              type="single" // Changed to single to allow only one item open at a time
+              type="single"
               collapsible
               className="w-full flex flex-col gap-6"
             >
