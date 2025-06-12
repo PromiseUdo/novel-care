@@ -12,6 +12,7 @@ import { X } from "lucide-react";
 const navLinks = [
   { url: "/", label: "Home" },
   { url: "/ndis", label: "NDIS" },
+  { url: "/sil", label: "SIL" },
   { url: "/referral", label: "Referral" },
   { url: "/employment", label: "Employment" },
   { url: "/blog", label: "Blog" },
