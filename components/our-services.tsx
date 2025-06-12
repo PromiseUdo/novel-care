@@ -90,31 +90,31 @@ const services2 = [
       "We work with you to ensure that you are able to attend and participate in the activities that you love and enjoy. We organise fun and educative activities for your enjoyment",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/profile-2user.png",
     title: "Community and Social Participation",
     description:
       "Community and Social Participation refers to the active involvement of individuals in various social activities and groups within their community. It emphasizes the importance of social connections and meaningful engagement for personal well-being and community cohesion. Examples include volunteering, joining clubs, attending community events, participating in support groups, engaging in community services, and being politically active. Encouraging community and social participation is crucial for creating a sense of belonging, reducing isolation, and fostering a supportive and inclusive community environment. It contributes to individuals' overall well-being and strengthens the community as a whole.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/wifi-square.png",
     title: "Innovative Community Participation",
     description:
       "Innovative community participation refers to the use of creative and novel approaches to engage individuals and communities in various social activities and decision-making processes. The goal is to foster active involvement, collaboration, and ownership within the community.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/brifecase-tick.png",
     title: "Supported Employment",
     description:
       "Supported Employment is a program that helps individuals with disabilities or barriers secure and retain employment in regular work settings. It offers personalized support to match individual strengths and interests with suitable job opportunities. By providing ongoing assistance and guidance, Supported Employment aims to enhance the participants' job skills, boost their confidence, and promote their long-term success in the workplace.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/airplane.png",
     title: "Assistance with Travel/Transport Arrangements",
     description:
       "Assistance with travel/transport arrangements involves providing support to individuals, particularly those with disabilities or mobility challenges, in planning and organizing their travel needs. The aim is to ensure safe and accessible transportation, helping individuals participate in activities and access services while maintaining their independence. This assistance enhances the overall quality of life for those who may face barriers to travel on their own.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/people.png",
     title: "Participation In Community, Social And Civic Activities",
     description:
       "Participation in community, social, and civic activities refers to the active engagement of individuals in various activities and events within their community and society. It involves taking part in a wide range of interactions, gatherings, and initiatives that contribute to personal growth, community well-being, and civic engagement. Community activities: These activities include participating in local events, festivals, workshops, and support groups. Engaging in community service, volunteering, and being part of neighborhood initiatives are also forms of community participation. Social activities: Social participation involves joining clubs, organizations, or hobby groups that align with one's interests and passions. It includes attending social gatherings, cultural events, and recreational activities that facilitate social connections. Civic activities: Civic participation refers to involvement in political and civic affairs. This can include attending community meetings, participating in local government processes, advocating for causes, and exercising the right to vote. Participation in these activities fosters a sense of belonging and connection within the community. It promotes social inclusion, personal development, and a feeling of contributing positively to the society at large. Being actively involved in community, social, and civic activities enriches individuals' lives and strengthens the fabric of the community as a whole.",
