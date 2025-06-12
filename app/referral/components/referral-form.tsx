@@ -113,7 +113,7 @@ const ReferralForm = () => {
     <div className="w-full mt-16">
       <MaxWidthWrapper>
         <div className=" w-full md:max-w-5xl border border-[#D4D0E280] shadow rounded-[40px] px-[16px] py-[40px] md:px-[40px] md:p-[40px] flex flex-col gap-[24px]">
-          <div className="flex items-start justify-between">
+          <div className="flex flex-col md:flex-row gap-2 items-start md:justify-between">
             <div className="flex flex-col gap-2">
               <p className="font-medium text-[#1E1E1E]">Email</p>
               <p className="text-[#1E1E1E]">info@novelcareservices.com.au</p>
@@ -372,7 +372,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_dateOfBirth"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Date of Birth
                         </FormLabel>
@@ -439,7 +439,7 @@ const ReferralForm = () => {
                     control={form.control}
                     name="client_gender"
                     render={({ field }) => (
-                      <FormItem>
+                      <FormItem className="col-span-2 md:col-span-1">
                         <FormLabel className="text-[14px] font-medium text-[#3D4A5C]">
                           Gender
                         </FormLabel>
