@@ -8,9 +8,9 @@ const OurValues = () => {
         <div className="flex flex-col items-center w-full gap-[40px]">
           <h2 className="text-[40px] text-[#4E4D4D]">Our Values</h2>
 
-          <div className="flex items-start gap-[52px]">
+          <div className="flex flex-col md:flex-row items-start gap-[52px]">
             <div className="w-full">
-              <p className="leading-[28px]">
+              <p className="text-justify md:text-left leading-[28px]">
                 Being disabled is not by choice. At Novel Care Services we
                 believe that everyone has a right to participate in the
                 community as much as they desire. In keeping with the ideals of
@@ -21,7 +21,7 @@ const OurValues = () => {
                 services and facilities on behalf of our clients.
               </p>
             </div>
-            <div className="w-full grid grid-cols-2 gap-4">
+            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="p-4 rounded-2xl bg-[#FAE4D180] ">
                 <div className="flex flex-col gap-[16px]">
                   <p className="font-medium text-[22px]">Respect</p>
@@ -35,7 +35,8 @@ const OurValues = () => {
                   <p className="font-medium text-[22px]">Dignity</p>
                   <p className="leading-[28px]">
                     At Novel Care Services, we value the dignity of every
-                    individual. People living with disability are not exempted.{" "}
+                    individual. People living with disability are not
+                    exempted.{" "}
                   </p>
                 </div>
               </div>
@@ -43,7 +44,8 @@ const OurValues = () => {
                 <div className="flex flex-col gap-[16px]">
                   <p className="font-medium text-[22px]">Independence</p>
                   <p className="leading-[28px]">
-                    We treat every client, family and staff with utmost respect.{" "}
+                    We treat every client, family and staff with utmost
+                    respect.{" "}
                   </p>
                 </div>
               </div>
