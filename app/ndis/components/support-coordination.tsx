@@ -7,6 +7,9 @@ const SupportCoordination = () => {
     <div className="w-full">
       <MaxWidthWrapper>
         <div className="w-full flex flex-col gap-[24px]">
+           <h2 className="text-[40px] text-center text-[#4E4D4D]">
+           Support Coordination
+          </h2>
           <p className="leading-[28px] text-[#1E1E1E]">
             Support Coordination assists you to build the skills you need to
             understand, implement and use your NDIS plan. A Support Coordinator
