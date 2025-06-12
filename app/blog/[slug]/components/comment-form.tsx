@@ -101,7 +101,7 @@ export default function CommentForm({ postId }: { postId: string }) {
               control={form.control}
               name="name"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormLabel>Name</FormLabel>
                   <FormControl>
                     <Input placeholder="Name" {...field} />
@@ -114,7 +114,7 @@ export default function CommentForm({ postId }: { postId: string }) {
               control={form.control}
               name="email"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="col-span-2 md:col-span-1">
                   <FormLabel>Email (Optional)</FormLabel>
                   <FormControl>
                     <Input type="email" placeholder="Email" {...field} />
