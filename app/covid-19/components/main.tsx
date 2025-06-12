@@ -11,7 +11,7 @@ const Main = () => {
           </h2>
 
           {/* Added min-h-[400px] to ensure flex container has enough height for items-center */}
-          <div className="flex flex-col-reverse md:flex-col items-center justify-between min-h-[400px] pb-[40px] gap-[40px] md:gap-[108px] ">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-between min-h-[400px] pb-[40px] gap-[40px] md:gap-[108px] ">
             <div className="w-full flex flex-col gap-[24px]">
               <p className="leading-[28px] text-[#1E1E1E]">
                 The safety of our clients, team members and their families

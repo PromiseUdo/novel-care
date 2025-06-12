@@ -3,7 +3,7 @@ import React from "react";
 
 const WhatIs = () => {
   return (
-    <div id="our-team" className="w-full mt-16">
+    <div  className="w-full mt-16">
       <MaxWidthWrapper>
         <div className="flex flex-col items-center w-full gap-[40px]">
           <h2 className="text-[40px] text-center text-[#4E4D4D]">

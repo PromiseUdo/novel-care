@@ -24,7 +24,7 @@ const socialIcons = [
 
 const SpreadLove = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-16">
       <MaxWidthWrapper>
         <div className="w-full flex items-center justify-center flex-col gap-[40px]">
           <h2 className="text-[40px] text-[#4E4D4D]">Spread the love</h2>
