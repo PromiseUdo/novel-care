@@ -2,6 +2,7 @@ import React from "react";
 import MaxWidthWrapper from "./max-width-wrapper";
 import * as Accordion from "@radix-ui/react-accordion";
 import { ChevronDownIcon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 const services1 = [
   {
@@ -47,11 +48,25 @@ const services1 = [
     description:
       "Assistance with daily life tasks in a group or shared living arrangement refers to the support provided to individuals living in a communal setting, such as a group home, assisted living facility, or shared housing. The assistance is aimed at helping residents with various activities of daily living (ADLs) to promote their well-being, independence, and overall quality of life. In such settings, trained staff or caregivers offer personalized assistance based on the residents' specific needs and abilities. The support can include help with tasks such as personal hygiene, meal preparation, medication management, housekeeping, transportation, and social engagement. The goal is to create a supportive environment where individuals can live comfortably while receiving the help they require to maintain their daily routines and participate in communal activities. This type of assistance allows individuals with disabilities, elderly individuals, or those with certain health conditions to live in a community setting and receive the necessary help to lead fulfilling lives while preserving their autonomy as much as possible.",
   },
-  { 
+  {
     icon: "/profile-user.png",
     title: "SIL Accomodation",
-    description:
-      "Specialized Independent Living offers personalized housing and support services for individuals with specific disabilities or conditions. The focus is on empowering individuals to live independently while receiving specialized assistance that caters to their unique needs. This approach enables individuals to participate actively in society, fostering a sense of independence, and promoting their overall well-being.",
+    description: (
+      <span>
+        Specialized Independent Living offers personalized housing and support
+        services for individuals with specific disabilities or conditions. The
+        focus is on empowering individuals to live independently while receiving
+        specialized assistance that caters to their unique needs. This approach
+        enables individuals to participate actively in society, fostering a
+        sense of independence, and promoting their overall well-being.{" "}
+        <Link
+          href="/sil"
+          className="text-[#E67817] underline hover:text-[#d16c14] transition-colors"
+        >
+          Read More
+        </Link>
+      </span>
+    ),
   },
 ];
 

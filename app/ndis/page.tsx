@@ -9,7 +9,7 @@ const page = () => {
     <div>
       <Hero />
       <WhatIs />
-<SupportCoordination/>
+      <SupportCoordination />
       <SpreadLove />
     </div>
   );
