@@ -6,19 +6,19 @@ const socialIcons = [
   {
     src: "/facebook-filled.png",
     alt: "Facebook",
-    href: "https://www.facebook.com/your-page",
+    href: "https://www.facebook.com/novelcareservices/",
   },
 
   {
     src: "/instagram-filled.png",
     alt: "Instagram",
-    href: "https://www.instagram.com/your-page",
+    href: "https://www.instagram.com/novel_care_services/",
   },
 
   {
     src: "/youtube-filled.png",
     alt: "Youtube",
-    href: "https://www.linkedin.com/your-page",
+    href: "https://www.youtube.com/channel/UCrSle1zQebem0XO-G_emGEQ/featured?view_as=subscriber",
   },
 ];
 
