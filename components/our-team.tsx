@@ -9,7 +9,7 @@ const OurTeam = () => {
           <h2 className="text-[40px] text-[#4E4D4D]">Our Team</h2>
 
           {/* Added min-h-[400px] to ensure flex container has enough height for items-center */}
-          <div className="flex items-center justify-between min-h-[400px] pb-[40px] gap-[108px] ">
+          <div className="flex flex-col-reverse md:flex-row items-center justify-between min-h-[400px] pb-[40px] gap-[40px] md:gap-[108px] ">
             <div className="w-full flex flex-col gap-[48px]">
               <p className="leading-[28px]">
                 At Novel Care Services, we pride ourselves with our friendly,
@@ -32,16 +32,16 @@ const OurTeam = () => {
             </div>
 
             {/* Added h-full to ensure image column matches flex container height */}
-            <div className="relative w-full h-full self-stretch">
+            <div className="relative w-full h-[280px] md:h-full self-stretch">
               <img
                 src="/our-team1.png"
                 alt="Bottom background image"
-                className="absolute top-[40px] left-[-50px] w-[300px] h-[325px]"
+                className="absolute top-[40px] left-[40px] md:left-[-50px] w-[200px] h-[217px]  md:w-[300px] md:h-[325px]"
               />
               <img
                 src="/our-team2.png"
                 alt="Top background image"
-                className="absolute top-0 right-0 w-[300px] h-[325px]"
+                className="absolute top-0 right-[40px] md:right-0  w-[200px] h-[217px]  md:w-[300px] md:h-[325px]"
               />
             </div>
           </div>
