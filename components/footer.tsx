@@ -16,7 +16,7 @@ const socialIcons = [
   {
     src: "/instagram.png",
     alt: "Instagram",
-    href: "https://www.instagram.com/your-page",
+    href: "https://www.instagram.com/novel_care_services/",
   },
   {
     src: "/linkedin.png",
