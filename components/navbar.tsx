@@ -110,6 +110,13 @@ const Navbar = () => {
                     NDIS
                   </Link>
                   <Link
+                    href="/sil"
+                    onClick={() => setIsOpen(false)}
+                    className="font-medium text-lg"
+                  >
+                    SIL
+                  </Link>
+                  <Link
                     href="/referral"
                     onClick={() => setIsOpen(false)}
                     className="font-medium text-lg"
