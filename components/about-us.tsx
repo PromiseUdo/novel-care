@@ -189,12 +189,12 @@ const AboutUs = () => {
               <img
                 src="/about1.png"
                 alt="Bottom background image"
-                className="absolute top-[20px] left-[50px] w-[200px] h-[217px] md:top-[40px] md:left-[-50px] md:w-[300px] md:h-[325px]"
+                className="absolute top-[20px] left-[40px] w-[200px] h-[217px] md:top-[40px] md:left-[-50px] md:w-[300px] md:h-[325px]"
               />
               <img
                 src="/about2.png"
                 alt="Top background image"
-                className="absolute top-0 right-[50px] w-[200px] h-[217px] md:top-0 md:right-0 md:w-[300px] md:h-[325px]"
+                className="absolute top-0 right-[40px] w-[200px] h-[217px] md:top-0 md:right-0 md:w-[300px] md:h-[325px]"
               />
             </div>
           </div>
@@ -205,12 +205,12 @@ const AboutUs = () => {
               <img
                 src="/about3.png"
                 alt="Bottom background image"
-                className="absolute top-[20px] left-[50px] w-[200px] h-[217px] md:top-[40px] md:left-0 md:w-[300px] md:h-[325px]"
+                className="absolute top-[20px] left-[40px] w-[200px] h-[217px] md:top-[40px] md:left-0 md:w-[300px] md:h-[325px]"
               />
               <img
                 src="/about2.png"
                 alt="Top background image"
-                className="absolute top-0 right-[50px] w-[200px] h-[217px] md:top-0 md:right-[-40px] md:w-[300px] md:h-[325px] scale-x-[-1]"
+                className="absolute top-0 right-[40px] w-[200px] h-[217px] md:top-0 md:right-[-40px] md:w-[300px] md:h-[325px] scale-x-[-1]"
               />
             </div>
 
