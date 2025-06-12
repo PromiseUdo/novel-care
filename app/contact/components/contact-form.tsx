@@ -106,9 +106,11 @@ const ContactForm = () => {
     <div className="w-full mt-16">
       <MaxWidthWrapper>
         <div className="flex flex-col items-center w-full gap-[40px]">
-          <h2 className="text-[40px] text-[#4E4D4D]">Get In touch with us</h2>
+          <h2 className="text-center text-[40px] text-[#4E4D4D]">
+            Get In touch with us
+          </h2>
 
-          <div className="w-full grid grid-cols-2  gap-[40px]">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2  gap-[40px]">
             <div className="flex flex-col gap-[32px]">
               <div>
                 <p>
