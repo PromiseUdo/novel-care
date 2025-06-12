@@ -20,8 +20,8 @@ export const sendReferralFormDataEmail = async (
 
     const { data, error } = await resend.emails.send({
       from: "Novel Care Services <no-reply@powerring.ng>",
-      to: "info.promiseudo@gmail.com",
-      subject: `New Referral Submission from ${validatedData.referrer_firstName} ${validatedData.referrer_lastName}`,
+ to: "info@novelcareservices.com.au", // Admin email
+      cc:"novelcareservices1@gmail.com",      subject: `New Referral Submission from ${validatedData.referrer_firstName} ${validatedData.referrer_lastName}`,
       react: ReferralFormEmailTemplate({ formData: validatedData }),
     });
 
@@ -46,8 +46,8 @@ export const sendFeedbackEmailData = async (formData: FeedbackSchemaType) => {
 
     const { data, error } = await resend.emails.send({
       from: "Novel Care Services <no-reply@powerring.ng>",
-      to: "info.promiseudo@gmail.com",
-      subject: `New Feedback/Complaint Submission from ${validatedData.firstName} ${validatedData.lastName}`,
+ to: "info@novelcareservices.com.au", // Admin email
+      cc:"novelcareservices1@gmail.com",      subject: `New Feedback/Complaint Submission from ${validatedData.firstName} ${validatedData.lastName}`,
       react: FeedbackFormEmailTemplate({ formData: validatedData }),
     });
 
@@ -72,7 +72,8 @@ export const sendContactFormDataEmail = async (formData: ContactSchemaType) => {
 
     const { data, error } = await resend.emails.send({
       from: "Novel Care Services <no-reply@powerring.ng>",
-      to: "info.promiseudo@gmail.com", // Admin email
+      to: "info@novelcareservices.com.au", // Admin email
+      cc:"novelcareservices1@gmail.com",
       subject: `New Contact Form Submission from ${validatedData.firstName}`,
       react: ContactFormEmailTemplate({ formData: validatedData }),
     });
