@@ -19,7 +19,7 @@ const HomePageNav = () => {
   };
 
   return (
-    <div className="w-full z-40  bg-white py-[10px] flex items-center h-[108px] sticky top-[96px]">
+    <div className="hidden md:flex w-full z-40  bg-white py-[10px] items-center h-[108px] sticky top-[96px]">
       <MaxWidthWrapper>
         <div className="flex items-center justify-center gap-[35px]">
           <Link
