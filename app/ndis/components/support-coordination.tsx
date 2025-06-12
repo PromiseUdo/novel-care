@@ -44,6 +44,20 @@ const SupportCoordination = () => {
             barriers to empower you to live your life, your way.
           </p>
 
+<div className="w-full max-w-[560px] mx-auto aspect-video rounded-xl overflow-hidden shadow-md">
+  <iframe
+    className="w-full h-full"
+    src="https://www.youtube.com/embed/VSbHanbKlAs"
+    title="How To - What is support coordination?"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    referrerPolicy="strict-origin-when-cross-origin"
+  ></iframe>
+</div>
+
+
+
           <p className="text-[#E67817FF] font-semibold text-[20px]">
             If you are interested in our Support Coordination services, complete
             our{" "}
