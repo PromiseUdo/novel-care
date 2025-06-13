@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -31,7 +29,7 @@ const slides = [
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [isVideoOpen, setIsVideoOpen] = useState(false); 
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   // Auto-scroll effect
   useEffect(() => {
@@ -167,22 +165,13 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Video Modal */}
-      {/* <ModalVideo
-        channel="custom"
+      <ModalVideo
+        channel="youtube"
         isOpen={isVideoOpen}
-        url="/novel-care-video.mp4"
+        videoId="4yR1cVwWC4Q"
         onClose={() => setIsVideoOpen(false)}
         allowFullScreen={true}
-      /> */}
-
-      <ModalVideo
-  channel="youtube" 
-  isOpen={isVideoOpen}
-  videoId="4yR1cVwWC4Q" 
-  onClose={() => setIsVideoOpen(false)}
-  allowFullScreen={true}
-/>
+      />
     </div>
   );
 };

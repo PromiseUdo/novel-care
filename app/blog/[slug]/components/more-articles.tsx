@@ -52,7 +52,40 @@ async function getData(searchQuery: string = "") {
     (a, b) => Date.parse(b.sys.createdAt) - Date.parse(a.sys.createdAt)
   );
 
-  return [blogPosts];
+  // return [blogPosts];
+
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
+
+  const postIds = blogPosts.items.map((post: any) => post.sys.id);
+  let commentCounts: Record<string, number> = {};
+  if (postIds.length > 0) {
+    try {
+      const response = await fetch(`${baseUrl}/api/comments/count`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ postIds }),
+        cache: "no-store", // Ensure fresh data
+      });
+      if (response.ok) {
+        commentCounts = await response.json();
+      } else {
+        console.error("Failed to fetch comment counts:", await response.json());
+      }
+    } catch (error) {
+      console.error("Error fetching comment counts:", error);
+    }
+  }
+
+  // Merge comment counts with posts
+  const enrichedPosts = {
+    ...blogPosts,
+    items: blogPosts.items.map((post: any) => ({
+      ...post,
+      commentCount: commentCounts[post.sys.id] || 0, // Add commentCount to post
+    })),
+  };
+
+  return [enrichedPosts];
 }
 
 const MoreArticles = async ({ postId }: { postId: string }) => {

@@ -31,8 +31,7 @@ async function getData(searchQuery: string = "") {
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3000";
 
-  // Fetch comment counts from MongoDB
-  const postIds = blogPosts.items.map((post: any) => post.sys.id); // Use Contentful sys.id as postId
+  const postIds = blogPosts.items.map((post: any) => post.sys.id);
   let commentCounts: Record<string, number> = {};
   if (postIds.length > 0) {
     try {
