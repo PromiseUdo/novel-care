@@ -18,11 +18,11 @@ const socialIcons = [
     alt: "Instagram",
     href: "https://www.instagram.com/novel_care_services/",
   },
-  {
-    src: "/linkedin.png",
-    alt: "LinkedIn",
-    href: "https://www.linkedin.com",
-  },
+  // {
+  //   src: "/linkedin.png",
+  //   alt: "LinkedIn",
+  //   href: "https://www.linkedin.com",
+  // },
   {
     src: "/youtube.png",
     alt: "Youtube",
