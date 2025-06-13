@@ -12,19 +12,19 @@ const services1 = [
       "Social participation improves general health and wellbeing. At Novel Care Services we do our best to assist our clients to be part of the community they choose. We assist our clients to develop and maintain the communication skills and social interaction skills required to function effectively. This service is provided in a non-judgemental and friendly atmosphere. We specialise in assisting clients to participate in social activities such as sports, swimming, yoga, pilates, dancing, and movies. Social skills such as shopping for groceries at bargain prices and money management are also taught by our experienced staff.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/briefcase.png",
     title: "Job skills and Employment",
     description:
       "People living with disability have a right to gainful employment. At Novel Care Services, we provide help in mapping and developing job skills for people with disability. The job skill training is given based on the goals set by our clients. We also provide support with job applications, preparation for interviews and attending interviews. Our approach is to go the extra mile for our clients by advocating on behalf of our clients.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/house.png",
     title: "24/7 Accommodation (including respite)",
     description:
       "Novel Care provides bespoke, comfortable and homely accommodation for people with disability. Our accommodation service comes with 24-hour care with the presence of friendly and experienced support workers. Respite care is not limited to a specific place. We can providerespite care for you in the comfort of of your own home or wherever you choose. It is important to mention here that respite caregiving can happen for as short as a few hours to a few weeks (such as during a caregiver's vacation).",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/user-octagon.png",
     title: "Mental Health and Psychosocial Recovery Coach",
     description:
       "A Mental Health and Psychosocial Recovery Coach is a professional who provides support and guidance to individuals dealing with mental health challenges and psychosocial issues. They work with clients to help them develop coping strategies, build resilience, and achieve their personal recovery goals. These coaches are trained in mental health and psychosocial principles and practices, and they may have a background in psychology, counseling, social work, or related fields. They do not provide therapy or clinical treatment, but rather focus on empowering individuals to take control of their lives and improve their overall well-being. The role of a Mental Health and Psychosocial Recovery Coach may involve offering emotional support, helping clients set achievable goals, assisting with problem-solving, and providing tools and techniques to manage stress and improve mental wellness. They can be an essential part of a person's support system, especially during times of transition or when navigating challenging life circumstances.",
