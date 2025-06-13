@@ -1,6 +1,8 @@
 import React from "react";
 import MaxWidthWrapper from "./max-width-wrapper";
 import Image from "next/image";
+import { Button } from "./ui/button";
+import Link from "next/link";
 
 const socialIcons = [
   {
@@ -105,6 +107,14 @@ const Footer = () => {
                 </div>
               </div>
             </div>
+            <Link target="_blank" href="https://be.contentful.com/login/">
+              <Button
+                className="border-[#E67817] bg-transparent font-semibold text-[#E67817] h-[52px] hover:bg-[#E67817] hover:text-[#1e1e1e] rounded-[64px] w-[300px]"
+                variant={"outline"}
+              >
+                Staff Login
+              </Button>
+            </Link>
           </div>
 
           <div className="flex items-center justify-start md:justify-center">
