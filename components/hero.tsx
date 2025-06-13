@@ -171,13 +171,21 @@ const Hero = () => {
       </div>
 
       {/* Video Modal */}
-      <ModalVideo
+      {/* <ModalVideo
         channel="custom"
         isOpen={isVideoOpen}
         url="/novel-care-video.mp4"
         onClose={() => setIsVideoOpen(false)}
         allowFullScreen={true}
-      />
+      /> */}
+
+      <ModalVideo
+  channel="youtube" 
+  isOpen={isVideoOpen}
+  videoId="4yR1cVwWC4Q" 
+  onClose={() => setIsVideoOpen(false)}
+  allowFullScreen={true}
+/>
     </div>
   );
 };
