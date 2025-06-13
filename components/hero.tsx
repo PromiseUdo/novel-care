@@ -31,7 +31,7 @@ const slides = [
 const Hero = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [isVideoOpen, setIsVideoOpen] = useState(false); // State for video modal
+  const [isVideoOpen, setIsVideoOpen] = useState(false); 
 
   // Auto-scroll effect
   useEffect(() => {
@@ -42,19 +42,16 @@ const Hero = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Reset transitioning state after animation
   useEffect(() => {
     const timer = setTimeout(() => setIsTransitioning(false), 1000);
     return () => clearTimeout(timer);
   }, [currentSlide]);
 
-  // Handle dot click
   const handleDotClick = (index: number) => {
     setIsTransitioning(true);
     setCurrentSlide(index);
   };
 
-  // Handle Learn More button click to open video
   const handleLearnMoreClick = () => {
     console.log("Opening video modal");
     setIsVideoOpen(true);
