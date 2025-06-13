@@ -65,7 +65,7 @@ const Hero = () => {
 
       <div className="relative z-30 flex h-full items-center px-2.5 md:px-8 lg:px-[80px]">
         <div className="text-white w-full md:w-[18rem]">
-          <h1 className="text-[60px] md:text-[64px] text-center leading-[100%] font-normal">
+          <h1 className="text-[128px] text-center leading-[100%] font-normal">
             SIL
           </h1>
         </div>
