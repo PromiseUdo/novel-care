@@ -30,26 +30,26 @@ const services1 = [
       "A Mental Health and Psychosocial Recovery Coach is a professional who provides support and guidance to individuals dealing with mental health challenges and psychosocial issues. They work with clients to help them develop coping strategies, build resilience, and achieve their personal recovery goals. These coaches are trained in mental health and psychosocial principles and practices, and they may have a background in psychology, counseling, social work, or related fields. They do not provide therapy or clinical treatment, but rather focus on empowering individuals to take control of their lives and improve their overall well-being. The role of a Mental Health and Psychosocial Recovery Coach may involve offering emotional support, helping clients set achievable goals, assisting with problem-solving, and providing tools and techniques to manage stress and improve mental wellness. They can be an essential part of a person's support system, especially during times of transition or when navigating challenging life circumstances.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/profile-tick.png",
     title: "Psychosocial Recovery Coaching to Participants",
     description:
       "Psychosocial Recovery Coaching is a support approach provided to individuals dealing with mental health challenges and psychosocial issues. The primary goal is to empower participants to take charge of their recovery journey and improve their overall well-being. The coaches, who are trained in mental health and psychosocial principles, offer emotional support, help set achievable goals, and assist with problem-solving. They provide tools and techniques to manage stress, build resilience, and develop coping strategies. Psychosocial Recovery Coaching does not involve therapy or clinical treatment but focuses on helping participants regain control of their lives. It emphasizes personal growth, social inclusion, and fostering a sense of empowerment and autonomy for the participants. By working with individuals in their recovery process, Psychosocial Recovery Coaching aims to enhance their social participation, self-determination, and overall quality of life.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/colorfilter.png",
     title: "Group and Centre-Based Activities",
     description:
       "Group and center-based activities are organized programs that gather people in a common location to engage in various social and recreational activities. These activities foster a sense of community and provide opportunities for individuals to connect with others who share similar interests or goals. The activities can range from educational workshops and skill-building sessions to leisure and recreational pursuits, contributing to participants' personal growth and social well-being.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/clock.png",
     title:
       "Assistance With Daily Life Tasks In A Group or Shared Living Arrangements",
     description:
       "Assistance with daily life tasks in a group or shared living arrangement refers to the support provided to individuals living in a communal setting, such as a group home, assisted living facility, or shared housing. The assistance is aimed at helping residents with various activities of daily living (ADLs) to promote their well-being, independence, and overall quality of life. In such settings, trained staff or caregivers offer personalized assistance based on the residents' specific needs and abilities. The support can include help with tasks such as personal hygiene, meal preparation, medication management, housekeeping, transportation, and social engagement. The goal is to create a supportive environment where individuals can live comfortably while receiving the help they require to maintain their daily routines and participate in communal activities. This type of assistance allows individuals with disabilities, elderly individuals, or those with certain health conditions to live in a community setting and receive the necessary help to lead fulfilling lives while preserving their autonomy as much as possible.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/user-square.png",
     title: "SIL Accomodation",
     description: (
       <span>
@@ -72,19 +72,19 @@ const services1 = [
 
 const services2 = [
   {
-    icon: "/profile-user.png",
+    icon: "/profile-circle.png",
     title: "Daily living",
     description:
       "Novel Care Services provides assistance with daily living activities. For people with disability, daily living activities such as cooking and shopping can be difficult. We offer a helping hand in this regard for wide range of activities. If the activity is important to you, then it is our task to ensure that it happens!",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/award.png",
     title: "Life Skills",
     description:
       "Life skills include all those activities that are necessary to live a more fulfiling life. Novel Care Services assists people living with disability in developing the required life skills, from preparing meals to communicating with other people. Awareness of life skills helps a person live an independent life. For example, money handling is a very important skill that everyone should be aware of. Other examples include management of household bills, and home maintenance. To live a healthy lifestyle, it is very important to follow a healthy diet plan. We assist people with disability to plan out a healthy weekly menu.",
   },
   {
-    icon: "/profile-user.png",
+    icon: "/share.png",
     title: "Community Services",
     description:
       "We work with you to ensure that you are able to attend and participate in the activities that you love and enjoy. We organise fun and educative activities for your enjoyment",
