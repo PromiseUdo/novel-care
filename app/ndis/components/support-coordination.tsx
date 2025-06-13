@@ -7,8 +7,8 @@ const SupportCoordination = () => {
     <div className="w-full">
       <MaxWidthWrapper>
         <div className="w-full flex flex-col gap-[24px]">
-           <h2 className="text-[40px] text-center text-[#4E4D4D]">
-           Support Coordination
+          <h2 className="text-[40px] text-center text-[#4E4D4D]">
+            Support Coordination
           </h2>
           <p className="leading-[28px] text-[#1E1E1E]">
             Support Coordination assists you to build the skills you need to
@@ -44,19 +44,17 @@ const SupportCoordination = () => {
             barriers to empower you to live your life, your way.
           </p>
 
-<div className="w-full max-w-[560px] mx-auto aspect-video rounded-xl overflow-hidden shadow-md">
-  <iframe
-    className="w-full h-full"
-    src="https://www.youtube.com/embed/VSbHanbKlAs"
-    title="How To - What is support coordination?"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowFullScreen
-    referrerPolicy="strict-origin-when-cross-origin"
-  ></iframe>
-</div>
-
-
+          <div className="w-full max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/VSbHanbKlAs"
+              title="How To - What is support coordination?"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              referrerPolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
 
           <p className="text-[#E67817FF] font-semibold text-[20px]">
             If you are interested in our Support Coordination services, complete
