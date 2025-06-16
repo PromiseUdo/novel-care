@@ -28,8 +28,8 @@ const Main = () => {
               SIL Accommodation
             </h2>
             <p className="text-base leading-[28px] text-[#1E1E1E]">
-              Supported living accommodation in the Northern suburbs of Perth to
-              assist you to maintain your independence and participate in the
+              Supported living accommodation in the Southwest, Black Wood Region
+              to assist you to maintain your independence and participate in the
               community. With 24/7 support we can help you get out and about to
               social groups, shopping, visiting the cinema, sports center or
               library, having coffee with friends or even go on holiday. Let us
