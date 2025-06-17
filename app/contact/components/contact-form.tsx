@@ -169,9 +169,12 @@ const ContactForm = () => {
                       height={24}
                       className="object-contain"
                     />
-                    <p className="text-[#4E4D4D]">
+                    <a
+                      href="mailto:info@novelcareservices.com.au"
+                      className="text-[#4E4D4D] hover:underline"
+                    >
                       info@novelcareservices.com.au
-                    </p>
+                    </a>
                   </div>
                   <div className="flex items-center gap-[4px]">
                     <Image
@@ -181,7 +184,12 @@ const ContactForm = () => {
                       height={24}
                       className="object-contain"
                     />
-                    <p className="text-[#4E4D4D]">0426414430</p>
+                    <a
+                      href="tel:0426414430"
+                      className="text-[#4E4D4D] hover:underline"
+                    >
+                      0426414430
+                    </a>{" "}
                   </div>
                 </div>
               </div>
