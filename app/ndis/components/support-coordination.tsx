@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import MaxWidthWrapper from "@/components/max-width-wrapper";
 import Link from "next/link";
+import { LiteYoutubeEmbed } from "react-lite-yt-embed";
 
 const SupportCoordination = () => {
   return (
@@ -45,15 +48,12 @@ const SupportCoordination = () => {
           </p>
 
           <div className="w-full max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/VSbHanbKlAs"
-              title="How To - What is support coordination?"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen
-              referrerPolicy="strict-origin-when-cross-origin"
-            ></iframe>
+            <LiteYoutubeEmbed
+              id="VSbHanbKlAs"
+              noCookie={true}
+              imageAltText="Support Coordination thumbnail"
+              iframeTitle="Support Coordination video"
+            />
           </div>
 
           <p className="text-[#E67817FF] font-semibold text-[20px]">

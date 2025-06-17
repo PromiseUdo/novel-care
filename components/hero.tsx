@@ -2,9 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import ModalVideo from "react-modal-video";
-import "react-modal-video/css/modal-video.css";
-
+import { LiteYoutubeEmbed } from "react-lite-yt-embed";
 const slides = [
   {
     bgImage: "/hero1-bg.png",
@@ -165,13 +163,28 @@ const Hero = () => {
         </div>
       </div>
 
-      <ModalVideo
-        channel="youtube"
-        isOpen={isVideoOpen}
-        videoId="4yR1cVwWC4Q"
-        onClose={() => setIsVideoOpen(false)}
-        allowFullScreen={true}
-      />
+      {isVideoOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75">
+          <div className="relative w-full max-w-4xl">
+            <button
+              className="absolute top-4 right-4 text-white text-3xl bg-black bg-opacity-50 rounded-full w-10 h-10 flex items-center justify-center z-50 hover:bg-opacity-75 transition-colors"
+              onClick={() => {
+                console.log("Close button clicked");
+                setIsVideoOpen(false);
+              }}
+              aria-label="Close video modal"
+            >
+              ×
+            </button>
+            <LiteYoutubeEmbed
+              id="4yR1cVwWC4Q"
+              noCookie={true}
+              imageAltText="Novel Care Services thumbnail"
+              iframeTitle="Novel Care Services video"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
