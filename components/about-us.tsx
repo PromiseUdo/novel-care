@@ -51,12 +51,12 @@ const AboutUs = () => {
 
             <div className="relative w-full h-[280px] md:h-full self-stretch">
               <img
-                src="/about1.png"
+                src="/about1.webp"
                 alt="Bottom background image"
                 className="absolute top-[20px] left-[40px] w-[200px] h-[217px] md:top-[40px] md:left-[-50px] md:w-[300px] md:h-[325px]"
               />
               <img
-                src="/about2.png"
+                src="/about2.webp"
                 alt="Top background image"
                 className="absolute top-0 right-[40px] w-[200px] h-[217px] md:top-0 md:right-0 md:w-[300px] md:h-[325px]"
               />
@@ -67,12 +67,12 @@ const AboutUs = () => {
           <div className="flex flex-col md:flex-row items-center justify-between min-h-[400px] gap-[40px] md:gap-[108px]">
             <div className="relative w-full h-[280px] md:h-full self-stretch">
               <img
-                src="/about3.png"
+                src="/about3.webp"
                 alt="Bottom background image"
                 className="absolute top-[20px] left-[40px] w-[200px] h-[217px] md:top-[40px] md:left-0 md:w-[300px] md:h-[325px]"
               />
               <img
-                src="/about2.png"
+                src="/about2.webp"
                 alt="Top background image"
                 className="absolute top-0 right-[40px] w-[200px] h-[217px] md:top-0 md:right-[-40px] md:w-[300px] md:h-[325px] scale-x-[-1]"
               />
@@ -97,7 +97,7 @@ const AboutUs = () => {
           <div className="flex flex-col md:flex-row items-center gap-[78px] xl:mt-[-85px]">
             <div className="relative flex-none w-[200px] h-[217px] md:w-[300px] md:h-[325px]">
               <img
-                src="/about4.png"
+                src="/about4.webp"
                 alt="Bottom background image"
                 className="absolute top-0 left-[19px] w-[200px] h-[217px] md:top-0 md:left-[28px] md:w-[300px] md:h-[325px]"
               />
