@@ -3,21 +3,22 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { LiteYoutubeEmbed } from "react-lite-yt-embed";
+import Image from "next/image";
 const slides = [
   {
-    bgImage: "/hero1-bg.png",
+    bgImage: "/hero1-bg.webp",
     title: "High quality care support service is what we do",
     description:
       "Novel Care Services aligns with ideals of the National Disability Insurance Scheme (NDIS) and performs the function of supporting people with disability.",
   },
   {
-    bgImage: "/hero2-bg.png",
+    bgImage: "/hero2-bg.webp",
     title: "Empowering lives with compassionate care",
     description:
       "We provide personalized support to enhance independence and quality of life for individuals with disabilities.",
   },
   {
-    bgImage: "/hero3-bg.png",
+    bgImage: "/hero3-bg.webp",
     title: "Your trusted partner in disability support",
     description:
       "Our dedicated team ensures every individual receives tailored care to thrive in their community.",
@@ -59,13 +60,20 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
             currentSlide === index ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
-          style={{
-            backgroundImage: `url('${slide.bgImage}')`,
-          }}
-        ></div>
+        >
+          <Image
+            src={slide.bgImage}
+            alt={`Slide ${index + 1} background`}
+            fill
+            sizes="100vw"
+            style={{ objectFit: "cover" }}
+            priority={index === 0}
+            quality={100}
+          />
+        </div>
       ))}
 
       {/* Full Rectangle Overlay for Mobile (below md) */}

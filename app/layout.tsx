@@ -22,8 +22,14 @@ const titanOne = Titan_One({
 export const metadata: Metadata = {
   title: "Novel Care Services",
   description: "High quality care support service",
-   icons: {
+  icons: {
     icon: "/favicon.png",
+  },
+  openGraph: {
+    title: "Novel Care Services",
+    description: "High quality care support service",
+    images: ["/hero1-bg.webp"],
+    url: "https://novelcareservices.com.au/",
   },
 };
 
@@ -34,8 +40,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-        <head>
+      <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="preconnect" href="https://img.youtube.com" />
       </head>
       <body className={`${montserrat.variable} ${titanOne.variable}`}>
         <main className="flex flex-col min-h-screen relative text-foreground">
