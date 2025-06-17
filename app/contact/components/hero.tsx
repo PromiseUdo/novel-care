@@ -8,7 +8,7 @@ const Hero = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/hero1-bg.png')`,
+          backgroundImage: `url('/hero.webp')`,
         }}
       ></div>
       <svg

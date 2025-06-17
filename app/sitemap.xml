@@ -1,0 +1,33 @@
+// app/sitemap.xml/route.ts
+import { NextResponse } from "next/server";
+
+export async function GET() {
+  const urls = [
+    { url: "https://novelcareservices.com.au/", priority: 1.0 },
+    { url: "https://novelcareservices.com.au/ndis", priority: 0.8 },
+    { url: "https://novelcareservices.com.au/sil", priority: 0.7 },
+    { url: "https://novelcareservices.com.au/referral", priority: 0.6 },
+    { url: "https://novelcareservices.com.au/employment", priority: 0.6 },
+    { url: "https://novelcareservices.com.au/blog", priority: 0.6 },
+    { url: "https://novelcareservices.com.au/covid-19", priority: 0.5 },
+    { url: "https://novelcareservices.com.au/feedback", priority: 0.5 },
+  ];
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      ${urls
+        .map(
+          ({ url, priority }) => `
+            <url>
+              <loc>${url}</loc>
+              <priority>${priority}</priority>
+            </url>
+          `
+        )
+        .join("")}
+    </urlset>`;
+
+  return new NextResponse(sitemap, {
+    headers: { "Content-Type": "text/xml" },
+  });
+}

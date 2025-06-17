@@ -66,7 +66,7 @@ const Hero = () => {
         >
           <Image
             src={slide.bgImage}
-            alt={`Slide ${index + 1} background`}
+            alt={`NDIS Provider Perth - Novel Care Services Slide ${index + 1}`}
             fill
             sizes="100vw"
             style={{ objectFit: "cover" }}

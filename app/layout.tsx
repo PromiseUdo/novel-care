@@ -20,14 +20,18 @@ const titanOne = Titan_One({
 });
 
 export const metadata: Metadata = {
-  title: "Novel Care Services",
-  description: "High quality care support service",
+  title:
+    "Novel Care Services | NDIS Provider Perth, Blackwood WA, Southwest WA",
+  description:
+    "Novel Care Services is a registered NDIS provider offering disability services Perth, NDIS services Blackwood WA, and NDIS support Southwest WA.",
   icons: {
     icon: "/favicon.png",
   },
   openGraph: {
-    title: "Novel Care Services",
-    description: "High quality care support service",
+    title: "Novel Care Services | NDIS Provider Perth, Blackwood WA",
+
+    description:
+      "Novel Care Services is a registered NDIS provider offering disability services Perth, NDIS services Blackwood WA, and NDIS support Southwest WA.",
     images: ["/hero1-bg.webp"],
     url: "https://novelcareservices.com.au/",
   },
@@ -43,6 +47,34 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="preconnect" href="https://img.youtube.com" />
+
+        {/* <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Novel Care Services",
+              description:
+                "Registered NDIS provider offering NDIS services Perth, Blackwood WA, and Southwest WA.",
+              url: "https://novelcareservices.com.au",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Perth",
+                addressRegion: "WA",
+                addressCountry: "AU",
+              },
+              areaServed: ["Perth", "Blackwood WA", "Southwest WA", "Bunbury"],
+              telephone: "+61-123-456-789", // Replace with actual phone
+              serviceType: [
+                "NDIS Personal Care",
+                "Psychosocial Recovery Coach",
+                "NDIS Community Access",
+                "NDIS Transport Services",
+              ],
+            }),
+          }}
+        /> */}
       </head>
       <body className={`${montserrat.variable} ${titanOne.variable}`}>
         <main className="flex flex-col min-h-screen relative text-foreground">

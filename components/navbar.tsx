@@ -38,7 +38,7 @@ const Navbar = () => {
           <Link href="/" className="relative w-[164.5px] h-[64px]">
             <img
               src="/logo.webp"
-              alt="Novel Care Services Logo"
+              alt="NDIS Services - Novel Care Services Logo"
               className="object-contain w-full h-full"
             />
           </Link>
