@@ -43,9 +43,13 @@ const Footer = () => {
       <MaxWidthWrapper className="h-full py-[50px] md:py-0">
         <div className=" w-full h-full grid grid-cols-1 md:grid-cols-3 items-start md:items-center md:gap-0 gap-[105px]">
           <div className="flex flex-col gap-[15px] ">
-            <div className="relative w-[164.5px] h-[64px]">
-              <Image src={"/logo.png"} alt="logo" fill className="" />
-            </div>
+            <Link href="/" className="relative w-[164.5px] h-[64px]">
+              <img
+                src="/logo.webp"
+                alt="Novel Care Services Logo"
+                className="object-contain w-full h-full"
+              />
+            </Link>
 
             <div className="flex items-center gap-[9px]">
               {socialIcons.map((icon, idx) => (

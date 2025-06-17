@@ -31,8 +31,16 @@ const Navbar = () => {
     <div className="shadow w-full h-[96px] bg-white py-[16px] sticky top-0 z-50">
       <MaxWidthWrapper>
         <div className="w-full flex items-center justify-between">
-          <Link href="/" className="relative w-[164.5px] h-[64px]">
+          {/* <Link href="/" className="relative w-[164.5px] h-[64px]">
             <Image src="/logo.png" alt="logo" fill className="" />
+          </Link> */}
+
+          <Link href="/" className="relative w-[164.5px] h-[64px]">
+            <img
+              src="/logo.webp"
+              alt="Novel Care Services Logo"
+              className="object-contain w-full h-full"
+            />
           </Link>
 
           <div className="ml-auto flex items-center">
