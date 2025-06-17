@@ -48,7 +48,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="preconnect" href="https://img.youtube.com" />
 
-        {/* <script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -65,7 +65,7 @@ export default function RootLayout({
                 addressCountry: "AU",
               },
               areaServed: ["Perth", "Blackwood WA", "Southwest WA", "Bunbury"],
-              telephone: "+61-123-456-789", // Replace with actual phone
+              telephone: "0426414430", // Replace with actual phone
               serviceType: [
                 "NDIS Personal Care",
                 "Psychosocial Recovery Coach",
@@ -74,7 +74,7 @@ export default function RootLayout({
               ],
             }),
           }}
-        /> */}
+        />
       </head>
       <body className={`${montserrat.variable} ${titanOne.variable}`}>
         <main className="flex flex-col min-h-screen relative text-foreground">

@@ -60,7 +60,7 @@ const Hero = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+          className={`absolute  inset-0 transition-opacity duration-1000 ease-in-out ${
             currentSlide === index ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
         >
@@ -71,7 +71,8 @@ const Hero = () => {
             sizes="100vw"
             style={{ objectFit: "cover" }}
             priority={index === 0}
-            quality={100}
+            quality={80}
+            loading={index !== 0 ? "lazy" : "eager"}
           />
         </div>
       ))}
