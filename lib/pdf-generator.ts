@@ -433,7 +433,7 @@ export async function generateEventPDF(params: EventPDFParams): Promise<Blob> {
 
   doc.setFont('helvetica', 'bold');
   doc.setTextColor(...whiteText);
-  doc.text('View Full Event Details:', margin + 5, currentY + 9);
+  doc.text('View Full Details:', margin + 5, currentY + 9);
 
   doc.setTextColor(...primaryColor);
   doc.textWithLink(eventUrl, margin + 55, currentY + 9, { url: eventUrl });
