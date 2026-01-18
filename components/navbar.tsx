@@ -15,8 +15,9 @@ const navLinks = [
   { url: '/sil', label: 'SIL' },
   { url: '/referral', label: 'Referral' },
   { url: '/employment', label: 'Employment' },
-  { url: '/blog', label: 'Blog' },
   { url: '/events', label: 'Events' },
+
+  { url: '/blog', label: 'Blog' },
 
   { url: '/covid-19', label: 'COVID-19' },
   { url: '/feedback', label: 'Feedback' },
@@ -141,19 +142,20 @@ const Navbar = () => {
                     Employment
                   </Link>
                   <Link
-                    href="/blog"
-                    onClick={() => setIsOpen(false)}
-                    className="font-medium text-lg"
-                  >
-                    Blog
-                  </Link>
-                  <Link
                     href="/events"
                     onClick={() => setIsOpen(false)}
                     className="font-medium text-lg"
                   >
                     Events
                   </Link>
+                  <Link
+                    href="/blog"
+                    onClick={() => setIsOpen(false)}
+                    className="font-medium text-lg"
+                  >
+                    Blog
+                  </Link>
+
                   <Link
                     href="/covid-19"
                     onClick={() => setIsOpen(false)}
