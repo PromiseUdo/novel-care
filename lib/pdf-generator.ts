@@ -306,37 +306,6 @@ export async function generateEventPDF(params: EventPDFParams): Promise<Blob> {
   const titleLines = doc.splitTextToSize(title.toUpperCase(), contentWidth);
   doc.text(titleLines, margin, 38);
 
-  // --- 2. QUICK INFO BAR ---
-  // let currentY = headerHeight + 10;
-  // const colWidth = (contentWidth - 10) / 3;
-  // const locLines = doc.splitTextToSize(location, colWidth);
-  // const infoBarHeight = Math.max(22, 12 + locLines.length * 5);
-
-  // doc.setFillColor(245, 245, 245);
-  // doc.roundedRect(margin, currentY, contentWidth, infoBarHeight, 1, 1, 'F');
-
-  // const drawCol = (label: string, value: string | string[], x: number) => {
-  //   doc.setFont('helvetica', 'bold');
-  //   doc.setFontSize(8);
-  //   doc.setTextColor(...primaryColor);
-  //   doc.text(label, x, currentY + 7);
-  //   doc.setFont('helvetica', 'normal');
-  //   doc.setFontSize(9);
-  //   doc.setTextColor(...darkText);
-  //   doc.text(value, x, currentY + 13);
-  // };
-
-  // drawCol('DATE', format(new Date(startDate), 'MMM dd, yyyy'), margin + 5);
-  // drawCol(
-  //   'TIME',
-  //   `${format(new Date(startDate), 'h:mm a')} - ${format(new Date(endDate), 'h:mm a')}`,
-  //   margin + colWidth + 5,
-  // );
-  // drawCol('LOCATION', locLines, margin + colWidth * 2 + 5);
-
-  // // --- 3. THE HIGHLIGHT: CENTRAL QR CODE ---
-  // currentY += infoBarHeight + 25;
-
   let currentY = headerHeight + 10;
 
   // Dynamic height calculation for Location
@@ -427,16 +396,49 @@ export async function generateEventPDF(params: EventPDFParams): Promise<Blob> {
   );
 
   // --- 4. EVENT LINK SECTION ---
-  currentY += 15;
-  doc.setFillColor(230, 120, 23, 0.1); // Very light orange tint
-  doc.rect(margin, currentY, contentWidth, 15, 'F');
+  // currentY += 15;
+  // doc.setFillColor(230, 120, 23, 0.1); // Very light orange tint
+  // doc.rect(margin, currentY, contentWidth, 15, 'F');
 
+  // doc.setFont('helvetica', 'bold');
+  // doc.setTextColor(...whiteText);
+  // doc.text('View Full Event Details:', margin + 5, currentY + 9);
+
+  // doc.setTextColor(...primaryColor);
+  // doc.textWithLink(eventUrl, margin + 55, currentY + 9, { url: eventUrl });
+
+  // --- 4. EVENT LINK SECTION ---
+  currentY += 15;
+
+  // We'll use a darker background for the bar to make the white text pop,
+  // or keep your light tint but change the label text color to dark.
+  doc.setFillColor(230, 120, 23, 0.1); // Primary orange background
+  doc.rect(margin, currentY, contentWidth, 12, 'F');
+
+  doc.setFontSize(10);
   doc.setFont('helvetica', 'bold');
   doc.setTextColor(...whiteText);
-  doc.text('View Full Details:', margin + 5, currentY + 9);
+  doc.text('View Full Event Details:', margin + 5, currentY + 7.5);
 
-  doc.setTextColor(...primaryColor);
-  doc.textWithLink(eventUrl, margin + 55, currentY + 9, { url: eventUrl });
+  // Use a friendly display string instead of the long raw URL
+  const linkDisplayText = 'Click here to view online';
+
+  // Position the link after the label
+  doc.setTextColor(...whiteText);
+  doc.textWithLink(linkDisplayText, margin + 52, currentY + 7.5, {
+    url: eventUrl,
+  });
+
+  // Optional: Add an underline to make it look like a traditional link
+  const linkWidth = doc.getTextWidth(linkDisplayText);
+  doc.setDrawColor(...whiteText);
+  doc.setLineWidth(0.2);
+  doc.line(
+    margin + 52,
+    currentY + 8.5,
+    margin + 52 + linkWidth,
+    currentY + 8.5,
+  );
 
   // --- 5. FOOTER (UNTOUCHED) ---
   const footerHeight = 45;
