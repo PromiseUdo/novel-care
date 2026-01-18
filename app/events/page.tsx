@@ -57,9 +57,9 @@ export default async function EventsPage() {
           ) : (
             <div className="bg-white rounded-lg p-8 sm:p-12 text-center shadow-sm border border-gray-100">
               <div className="max-w-md mx-auto">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#E67817]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-8 h-8 text-[#E67817]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -72,7 +72,7 @@ export default async function EventsPage() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <h3 className="text-xl font-semibold text-[#4E4D4D] mb-2">
                   No Upcoming Events
                 </h3>
                 <p className="text-gray-600">
@@ -87,7 +87,7 @@ export default async function EventsPage() {
         {pastEvents.length > 0 && (
           <section>
             <div className="mb-8">
-              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">
+              <h2 className="text-2xl sm:text-3xl font-bold text-[#4E4D4D] mb-2">
                 Past Events
               </h2>
               <p className="text-gray-600">
