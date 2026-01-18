@@ -71,6 +71,7 @@ export default function EventDetailContent({ event }: EventDetailContentProps) {
     setIsDownloading(true);
     try {
       const feedbackUrl = `${window.location.origin}/events/${slug}/feedback`;
+      const eventUrl = `${window.location.origin}/events/${slug}`;
       const qrCodeDataUrl = await generateQRCode(feedbackUrl);
 
       const pdfBlob = await generateEventPDF({
@@ -82,6 +83,7 @@ export default function EventDetailContent({ event }: EventDetailContentProps) {
         organizer: organizer || 'Novel Care Services',
         qrCodeDataUrl,
         feedbackUrl,
+        eventUrl,
         imageUrl,
       });
 
