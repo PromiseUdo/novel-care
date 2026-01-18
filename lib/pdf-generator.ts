@@ -412,7 +412,7 @@ export async function generateEventPDF(params: EventPDFParams): Promise<Blob> {
 
   // We'll use a darker background for the bar to make the white text pop,
   // or keep your light tint but change the label text color to dark.
-  doc.setFillColor(230, 120, 23, 0.1); // Primary orange background
+  doc.setFillColor(230, 120, 23); // Primary orange background
   doc.rect(margin, currentY, contentWidth, 12, 'F');
 
   doc.setFontSize(10);
