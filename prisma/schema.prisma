@@ -18,3 +18,40 @@ model Comment {
 
   @@index([postId]) // Optimize queries by postId
 }
+
+
+
+model EventFeedback {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  eventSlug String
+  
+  // Event Experience
+  presentationRating  String?
+  gainedFromEvent     String?  
+  venueRating         String?
+  activitiesRating    String?
+  
+  // Event Awareness
+  heardAboutEvent     String?
+  heardAboutEventOther String?
+  
+  // Brand Awareness
+  knewAboutNovelCare  String?
+  knewAboutCarersWA   String?
+  improvedUnderstanding String?
+  
+  // Participant Information
+  onNDIS              String?
+  takingCareOf        String?
+  takingCareOfOther   String?
+  
+  // Additional Comments
+  additionalComments  String? 
+  
+  // Metadata
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  
+  @@index([eventSlug])
+  @@index([createdAt])
+}

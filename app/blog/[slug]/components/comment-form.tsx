@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { zodResolver } from "@hookform/resolvers/zod";
-import React, { useState } from "react";
-import { Textarea } from "@/components/ui/textarea";
-import { useForm } from "react-hook-form";
+import { zodResolver } from '@hookform/resolvers/zod';
+import React, { useState } from 'react';
+import { Textarea } from '@/components/ui/textarea';
+import { useForm } from 'react-hook-form';
 import {
   Form,
   FormControl,
@@ -11,12 +11,12 @@ import {
   FormLabel,
   FormItem,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
-import { useCommentContext } from "@/context/comment-context";
-import { CommentSchema, CommentSchemaType } from "@/types/comment-schema";
+} from '@/components/ui/form';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { toast } from 'sonner';
+import { useCommentContext } from '@/context/comment-context';
+import { CommentSchema, CommentSchemaType } from '@/types/comment-schema';
 
 export default function CommentForm({ postId }: { postId: string }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -26,11 +26,11 @@ export default function CommentForm({ postId }: { postId: string }) {
     resolver: zodResolver(CommentSchema),
     defaultValues: {
       id: undefined,
-      name: "",
-      email: "",
-      comment: "",
+      name: '',
+      email: '',
+      comment: '',
     },
-    mode: "onChange",
+    mode: 'onChange',
   });
 
   const onSubmit = async (data: CommentSchemaType) => {
@@ -44,13 +44,13 @@ export default function CommentForm({ postId }: { postId: string }) {
       timestamp: clientTimestamp,
     };
 
-    dispatchComment({ type: "ADD", comment: tempComment });
+    dispatchComment({ type: 'ADD', comment: tempComment });
     // toast.info("Submitting your comment...");
 
     try {
-      const response = await fetch("/api/submit-comment", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const response = await fetch('/api/submit-comment', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: data.name,
           email: data.email,
@@ -62,9 +62,9 @@ export default function CommentForm({ postId }: { postId: string }) {
 
       if (response.ok) {
         const { comment } = await response.json();
-        console.log("API response comment:", comment);
+        // console.log("API response comment:", comment);
         dispatchComment({
-          type: "UPDATE",
+          type: 'UPDATE',
           comment: {
             id: tempId,
             author: comment.author,
@@ -76,13 +76,13 @@ export default function CommentForm({ postId }: { postId: string }) {
         form.reset();
       } else {
         const error = await response.json();
-        toast.error(error.error || "Failed to submit comment");
-        dispatchComment({ type: "REMOVE", id: tempId });
+        toast.error(error.error || 'Failed to submit comment');
+        dispatchComment({ type: 'REMOVE', id: tempId });
       }
     } catch (error) {
-      console.error("Error submitting comment:", error);
-      toast.error("An unexpected error occurred");
-      dispatchComment({ type: "REMOVE", id: tempId });
+      console.error('Error submitting comment:', error);
+      toast.error('An unexpected error occurred');
+      dispatchComment({ type: 'REMOVE', id: tempId });
     } finally {
       setIsSubmitting(false);
     }
@@ -144,7 +144,7 @@ export default function CommentForm({ postId }: { postId: string }) {
               disabled={isSubmitting}
               className="w-[300px] font-semibold h-[52px] text-black bg-[#E67817] rounded-[64px]"
             >
-              {isSubmitting ? "Posting..." : "Post"}
+              {isSubmitting ? 'Posting...' : 'Post'}
             </Button>
           </div>
         </form>

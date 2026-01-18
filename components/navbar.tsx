@@ -1,23 +1,24 @@
-"use client";
-import React, { useState } from "react";
-import MaxWidthWrapper from "./max-width-wrapper";
-import Image from "next/image";
-import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { Button } from "./ui/button";
-import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "@/lib/utils";
-import { X } from "lucide-react";
+'use client';
+import React, { useState } from 'react';
+import MaxWidthWrapper from './max-width-wrapper';
+import Image from 'next/image';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
+import { Button } from './ui/button';
+import { AnimatePresence, motion } from 'framer-motion';
+import { cn } from '@/lib/utils';
+import { X } from 'lucide-react';
 
 const navLinks = [
-  { url: "/", label: "Home" },
-  { url: "/ndis", label: "NDIS" },
-  { url: "/sil", label: "SIL" },
-  { url: "/referral", label: "Referral" },
-  { url: "/employment", label: "Employment" },
-  { url: "/blog", label: "Blog" },
-  { url: "/covid-19", label: "COVID-19" },
-  { url: "/feedback", label: "Feedback" },
+  { url: '/', label: 'Home' },
+  { url: '/ndis', label: 'NDIS' },
+  { url: '/sil', label: 'SIL' },
+  { url: '/referral', label: 'Referral' },
+  { url: '/employment', label: 'Employment' },
+  { url: '/blog', label: 'Blog' },
+  { url: '/covid-19', label: 'COVID-19' },
+  { url: '/events', label: 'Events' },
+  { url: '/feedback', label: 'Feedback' },
 ];
 
 const Navbar = () => {
@@ -53,8 +54,8 @@ const Navbar = () => {
                     key={link.label}
                     className={`transition-all duration-200 font-montserrat border-b-2 font-medium hover:text-[#E67817FF] hover:border-[#E67817FF] ${
                       isActive
-                        ? "text-[#E67817FF] border-[#E67817FF]"
-                        : "border-white"
+                        ? 'text-[#E67817FF] border-[#E67817FF]'
+                        : 'border-white'
                     }`}
                     href={link.url}
                   >
@@ -69,8 +70,8 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 className={cn(
-                  "relative z-50 flex flex-col items-center justify-center w-10 h-10 group",
-                  isOpen === true && "hidden"
+                  'relative z-50 flex flex-col items-center justify-center w-10 h-10 group',
+                  isOpen === true && 'hidden',
                 )}
                 onClick={toggleMenu}
                 aria-label="Toggle menu"
@@ -98,7 +99,7 @@ const Navbar = () => {
               </button>
               <motion.div
                 initial={{ height: 0 }}
-                animate={{ height: isOpen ? "100vh" : 0 }}
+                animate={{ height: isOpen ? '100vh' : 0 }}
                 transition={{ duration: 0.3 }}
                 className="fixed top-0 left-0 w-full h-screen bg-white  z-40 overflow-hidden"
               >

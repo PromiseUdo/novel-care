@@ -1,5 +1,5 @@
-import React from "react";
-import MaxWidthWrapper from "./max-width-wrapper";
+import React from 'react';
+import MaxWidthWrapper from './max-width-wrapper';
 
 const OurValues = () => {
   return (
@@ -36,7 +36,7 @@ const OurValues = () => {
                   <p className="leading-[28px]">
                     At Novel Care Services, we value the dignity of every
                     individual. People living with disability are not
-                    exempted.{" "}
+                    exempted.{' '}
                   </p>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const OurValues = () => {
                   <p className="font-medium text-[22px]">Independence</p>
                   <p className="leading-[28px]">
                     We treat every client, family and staff with utmost
-                    respect.{" "}
+                    respect.{' '}
                   </p>
                 </div>
               </div>
@@ -57,7 +57,7 @@ const OurValues = () => {
                   <p className="leading-[28px]">
                     We have well trained staff who can act as your mentor in
                     developing life skills that you want to acquire in a
-                    friendly and supportive environment.{" "}
+                    friendly and supportive environment.{' '}
                   </p>
                 </div>
               </div>

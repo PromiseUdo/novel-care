@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React from "react";
-import MaxWidthWrapper from "@/components/max-width-wrapper";
-import Link from "next/link";
-import { LiteYoutubeEmbed } from "react-lite-yt-embed";
+import React from 'react';
+import MaxWidthWrapper from '@/components/max-width-wrapper';
+import Link from 'next/link';
+import { LiteYoutubeEmbed } from 'react-lite-yt-embed';
 
 const SupportCoordination = () => {
   return (
@@ -58,13 +58,13 @@ const SupportCoordination = () => {
 
           <p className="text-[#E67817FF] font-semibold text-[20px]">
             If you are interested in our Support Coordination services, complete
-            our{" "}
+            our{' '}
             <Link
               href="/referral"
               className="text-[#E67817] underline hover:text-[#d16c14] transition-colors"
             >
               e-referral form
-            </Link>{" "}
+            </Link>{' '}
             and we will get back to you as soon as possible to schedule an
             introductory meeting.
           </p>
