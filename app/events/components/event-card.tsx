@@ -141,15 +141,15 @@ export default function EventCard({ event }: EventCardProps) {
             disabled={isDownloading}
             className="flex items-center gap-2 border-[#E67817] text-[#E67817]  hover:text-[#d16c14] w-20 hover:[#E67817]/10"
           >
-            {/* {isDownloading ? (
+            {isDownloading ? (
               <Loader2 className="w-4 h-4 animate-spin" />
             ) : (
               <Download className="w-4 h-4" />
             )}
-            {isDownloading ? 'Generating' : 'PDF'} */}
+            {'PDF'}
 
-            <Download className="w-4 h-4" />
-            <p>PDF</p>
+            {/* <Download className="w-4 h-4" /> */}
+            {/* <p>PDF</p> */}
           </Button>
         </div>
       </div>
