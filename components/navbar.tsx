@@ -154,6 +154,13 @@ const Navbar = () => {
                     COVID-19
                   </Link>
                   <Link
+                    href="/events"
+                    onClick={() => setIsOpen(false)}
+                    className="font-medium text-lg"
+                  >
+                    Events
+                  </Link>
+                  <Link
                     href="/feedback"
                     onClick={() => setIsOpen(false)}
                     className="font-medium text-lg"
