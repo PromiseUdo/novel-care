@@ -11,6 +11,7 @@ export interface EventSkeleton extends EntrySkeletonType {
     endDate: EntryFieldTypes.Date;
     location: EntryFieldTypes.Symbol;
     featuredImage: EntryFieldTypes.AssetLink;
+    eventGallery?: EntryFieldTypes.Array<EntryFieldTypes.AssetLink>;
     category?: EntryFieldTypes.Symbol;
     organizer?: EntryFieldTypes.Symbol;
     status?: EntryFieldTypes.Symbol<'upcoming' | 'ongoing' | 'completed'>;

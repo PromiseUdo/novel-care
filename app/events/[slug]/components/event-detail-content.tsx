@@ -35,11 +35,15 @@ interface EventDetailContentProps {
 
 import { Asset, UnresolvedLink } from 'contentful';
 import FeedbackDisplay from './feedback-display';
+import EventGallery from './event-gallery';
+
+type ContentfulAsset = Asset<undefined, string>;
+type GalleryAsset = ContentfulAsset | UnresolvedLink<'Asset'>;
 
 function isResolvedAsset(
-  asset: Asset | UnresolvedLink<'Asset'> | undefined,
-): asset is Asset {
-  return !!(asset as Asset)?.fields?.file;
+  asset: GalleryAsset | undefined,
+): asset is ContentfulAsset {
+  return !!asset && 'fields' in asset && !!asset.fields?.file;
 }
 
 export default function EventDetailContent({ event }: EventDetailContentProps) {
@@ -54,6 +58,7 @@ export default function EventDetailContent({ event }: EventDetailContentProps) {
     endDate,
     location,
     featuredImage,
+    eventGallery,
     category,
     organizer,
   } = event.fields;
@@ -148,6 +153,13 @@ export default function EventDetailContent({ event }: EventDetailContentProps) {
 
             {/* Feedbacks */}
             <FeedbackDisplay eventId={eventId} />
+
+            {/* Event Gallery */}
+            {/* <EventGallery gallery={eventGallery} /> */}
+
+            <EventGallery
+              gallery={(eventGallery ?? []).filter(isResolvedAsset)}
+            />
 
             {/* Feedback CTA */}
             <div className=" bg-[#E67817]/10 backdrop-blur-md border border-white/20   rounded-lg p-6 sm:p-8  ">

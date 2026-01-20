@@ -72,5 +72,7 @@ export default async function EventDetailPage({
     notFound();
   }
 
+  // console.dir(event, { depth: null });
+
   return <EventDetailContent event={event} />;
 }

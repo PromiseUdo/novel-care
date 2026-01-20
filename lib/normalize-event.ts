@@ -13,6 +13,7 @@ export function normalizeEvent(entry: any): Event {
       endDate: entry.fields.endDate,
       location: String(entry.fields.location || ''),
       featuredImage: entry.fields.featuredImage ?? null,
+      eventGallery: entry.fields.eventGallery ?? null,
       category: entry.fields.category || undefined,
       organizer: entry.fields.organizer || undefined,
       status: entry.fields.status || undefined,
