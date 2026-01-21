@@ -151,15 +151,15 @@ export default function EventDetailContent({ event }: EventDetailContentProps) {
               </div>
             </div>
 
+            <EventGallery
+              gallery={(eventGallery ?? []).filter(isResolvedAsset)}
+            />
+
             {/* Feedbacks */}
             <FeedbackDisplay eventId={eventId} />
 
             {/* Event Gallery */}
             {/* <EventGallery gallery={eventGallery} /> */}
-
-            <EventGallery
-              gallery={(eventGallery ?? []).filter(isResolvedAsset)}
-            />
 
             {/* Feedback CTA */}
             <div className=" bg-[#E67817]/10 backdrop-blur-md border border-white/20   rounded-lg p-6 sm:p-8  ">
